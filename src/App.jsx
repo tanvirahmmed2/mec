@@ -7,13 +7,16 @@ import Error from "./layout/Error";
 
 const App = () => {
   return (
-    <div>
+    <div className="w-full overflow-x-hidden h-auto">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
+      <div className="w-full min-h-screen">
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-        <Route path="/*" element={<Error />} />
-      </Routes>
+          <Route path="/*" element={<Error />} />
+        </Routes>
+      </div>
+
       <Footer />
     </div>
   );
