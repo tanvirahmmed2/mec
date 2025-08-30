@@ -82,8 +82,13 @@ const Navbar = () => {
 
             </nav>
 
-            <div>
-
+            <div className={`w-[200px] absolute top-20 z-50 right-0 bg-white  p-4 gap-4 h-auto items-start justify-start flex-col flex`}>
+                
+                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="">Home</Link>
+                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/notices">Notice</Link>
+                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/gallery">Gallery</Link>
+                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/contacts">Contacts</Link>
+                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/contacts">Student Login</Link>
             </div>
 
 
