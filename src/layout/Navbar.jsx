@@ -10,22 +10,23 @@ const Navbar = () => {
 
                 <div className='w-auto h-28 flex flex-row items-center justify-center gap-2'>
                     <a href="/"><img src={logo} alt="" className='h-24' /></a>
-                    <div className='w-auto h-24 flex flex-col items-center justify-center gap-2 font-semibold text-xl'>
-                        <h1>Mymensingh Engineering College</h1>
-                        <h1>ময়মনসিংহ ইঞ্জিনিয়ারিং কলেজ</h1>
+                    <div className='w-auto h-24 flex flex-col items-center justify-center gap-2 font-semibold text-2xl'>
+                        <h1 className=''>Mymensingh Engineering College</h1>
+                        <h1 className='opacity-65'>ময়মনসিংহ ইঞ্জিনিয়ারিং কলেজ</h1>
                     </div>
 
                 </div>
-                <div className='w-auto h-28 flex flex-col items-center justify-center'>
+                <div className='w-auto h-28 flex flex-col items-end justify-center'>
 
-                    <div className=' w-auto h-14 flex flex-row items-center justify-center gap-2'>
+                    <div className=' w-auto h-14 flex flex-row items-center justify-cneter gap-2'>
                         <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' to="/">Home</Link>
                         <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' to="/student-account">Student apply</Link>
+                        <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' to="/alumni">Alumni</Link>
                     </div>
 
-                    <div className=' w-auto h-14 flex  flex-row items-center justify-center gap-2'>
+                    <div className=' w-auto h-14 flex  flex-row items-center justify-center '>
                         <div className='w-auto relative group'>
-                            <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' to="/department">Department <IoIosArrowDown/></Link>
+                            <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 gap-2' to="/department">Department <IoIosArrowDown/></Link>
                             <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
                                 <Link className='w-auto px-2 flex h-14 items-center hover:scale-105 transition duration-300' to="/ce">Department of Civil Engineering</Link>
                                 <Link className='w-auto px-2 block h-14 items-center hover:scale-105 transition duration-300' to="/eee">Department of Electrical & Electronic Engineering</Link>
@@ -34,7 +35,7 @@ const Navbar = () => {
                         </div>
                         
                         <div className='w-auto relative group'>
-                            <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' to="/department">Administration <IoIosArrowDown/></Link>
+                            <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 gap-2' to="/department">Administration <IoIosArrowDown/></Link>
                             <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start gap-2 bg-white '>
                                 <Link className='w-auto px-2 flex h-14 items-center hover:scale-105 transition duration-300' to="/faculty">Faculty</Link>
                                 <Link className='w-auto px-2 flex h-14 items-center hover:scale-105 transition duration-300' to="/officers">Officers</Link>
@@ -42,7 +43,7 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className='w-auto relative group'>
-                            <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' to="/department">Clubs <IoIosArrowDown/></Link>
+                            <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 gap-2' to="/department">Clubs <IoIosArrowDown/></Link>
                             <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start gap-2 bg-white '>
                                 <Link className='w-auto px-2 flex h-14 items-center hover:scale-105 transition duration-300' to="/">Alpha Science Lab</Link>
                                 <Link className='w-auto px-2 flex h-14 items-center hover:scale-105 transition duration-300' to="/">MESL</Link>
@@ -51,7 +52,7 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className='w-auto relative group'>
-                            <p className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' >Academics <IoIosArrowDown/></p>
+                            <p className='w-auto h-14 flex items-center hover:border-b-2 px-4 gap-2 ' >Academics <IoIosArrowDown/></p>
                             <div className='w-auto rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
                                 <a className='w-auto px-2 flex h-14 items-center hover:scale-105 transition duration-300' href="https://cmc.du.ac.bd/result.php">Result</a>
                                 <a className='w-auto px-2 flex h-14 items-center hover:scale-105 transition duration-300' href="https://collegeadmission.eis.du.ac.bd/en">Admission</a>
