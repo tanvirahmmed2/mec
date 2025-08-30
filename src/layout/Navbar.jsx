@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from "../images/logo.png"
 import { Link } from 'react-router-dom'
 import { IoIosArrowDown } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
+    const [menu, setMenu]=useState(false)
+    const handlemenu=()=>{
+        setMenu(!menu)
+    }
     return (
         <section className='w-full relative h-auto'>
             <nav className='w-full h-20 sm:h-32  flex flex-col items-center justify-between border-b-2 z-40'>
@@ -21,7 +25,7 @@ const Navbar = () => {
                         <Link className='w-auto h-12 hidden sm:flex  items-center hover:border-b-2 px-4 ' to="/">Home</Link>
                         <Link className='w-auto h-12 hidden md:flex  items-center hover:border-b-2 px-4 ' to="/student-account">Student apply</Link>
                         <Link className='w-auto h-12 hidden lg:flex  items-center hover:border-b-2 px-4 ' to="/alumni">Alumni</Link>
-                        <p className='w-auto h-12 flex items-center hover:border-b-2 px-4 cursor-pointer '><GiHamburgerMenu /></p>
+                        <p className='w-auto h-12 flex lg:hidden items-center hover:border-b-2 px-4 cursor-pointer ' onClick={handlemenu}><GiHamburgerMenu /></p>
                     </div>
 
                 </div>
@@ -82,13 +86,20 @@ const Navbar = () => {
 
             </nav>
 
-            <div className={`w-[200px] absolute top-20 z-50 right-0 bg-white  p-4 gap-4 h-auto items-start justify-start flex-col flex`}>
+            <div className={`w-[200px]  lg:hidden absolute top-20 z-50 right-0 bg-white  p-4 gap-4 h-auto items-start justify-start flex-col ${menu? "flex" : "hidden"}`}>
                 
-                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="">Home</Link>
+                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/">Home</Link>
+                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/about">About</Link>
+                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/department">Department</Link>
+                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/administration">Administration</Link>
+                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/academics">Academics</Link>
+                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/clubs">Clubs</Link>
+                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/society">Society</Link>
+                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/alumni">Alumni</Link>
                 <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/notices">Notice</Link>
                 <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/gallery">Gallery</Link>
                 <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/contacts">Contacts</Link>
-                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/contacts">Student Login</Link>
+                <Link className='w-auto flex items-center  px-4' to="/student-account">Student Login</Link>
             </div>
 
 
