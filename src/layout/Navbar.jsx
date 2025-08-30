@@ -7,7 +7,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
     return (
         <section className='w-full relative h-auto'>
-            <nav className='w-full h-32  flex flex-col items-center justify-between border-b-2 z-40'>
+            <nav className='w-full h-20 sm:h-32  flex flex-col items-center justify-between border-b-2 z-40'>
                 <div className='w-full h-20 flex flex-row items-center justify-around'>
                     <div className='w-auto h-20 flex flex-row items-center justify-center gap-3 px-2'>
                         <a href="/"><img src={logo} alt="" className='h-14 w-14 md:h-16 md:w-16' /></a>
@@ -26,7 +26,7 @@ const Navbar = () => {
 
                 </div>
 
-                <div className=' w-full h-12 flex  flex-row items-center justify-center bg-red-800'>
+                <div className=' w-full h-12 hidden sm:flex  flex-row items-center justify-center bg-red-800'>
                     <div className='w-auto relative group'>
                         <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' to="/department">Department <IoIosArrowDown /></Link>
                         <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
@@ -36,7 +36,7 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    <div className='w-auto relative group'>
+                    <div className='w-auto hidden lg:block relative group'>
                         <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' to="/department">Administration <IoIosArrowDown /></Link>
                         <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/faculty">Faculty</Link>
@@ -44,9 +44,10 @@ const Navbar = () => {
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/staff">Staff</Link>
                         </div>
                     </div>
-                    <div className='w-auto relative group'>
+                    <div className='w-auto hidden md:block relative group'>
                         <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' to="/department">Clubs <IoIosArrowDown /></Link>
                         <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
+                            <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/">MEC Research Club</Link>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/">Alpha Science Lab</Link>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/">MESL</Link>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/">MEC Computer Club</Link>
@@ -59,6 +60,12 @@ const Navbar = () => {
                         <div className='w-auto rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
                             <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="https://cmc.du.ac.bd/result.php">Result</a>
                             <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="https://collegeadmission.eis.du.ac.bd/en">Admission</a>
+                        </div>
+                    </div>
+                    <div className='w-auto hidden lg:block relative group'>
+                        <p className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' >Download <IoIosArrowDown /></p>
+                        <div className='w-auto rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
+                            <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="https://cmc.du.ac.bd/result.php">PDF</a>
                         </div>
                     </div>
 
