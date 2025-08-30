@@ -38,7 +38,7 @@ const Navbar = () => {
 
                     <div className='w-auto relative group'>
                         <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' to="/department">Administration <IoIosArrowDown /></Link>
-                        <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start gap-2 bg-white '>
+                        <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/faculty">Faculty</Link>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/officers">Officers</Link>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/staff">Staff</Link>
@@ -46,9 +46,10 @@ const Navbar = () => {
                     </div>
                     <div className='w-auto relative group'>
                         <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' to="/department">Clubs <IoIosArrowDown /></Link>
-                        <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start gap-2 bg-white '>
+                        <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/">Alpha Science Lab</Link>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/">MESL</Link>
+                            <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/">MEC Computer Club</Link>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/">MEC Debate Society</Link>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/">MEC Films and Photography Society</Link>
                         </div>
