@@ -63,6 +63,7 @@ const Navbar = () => {
 
                     <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 text-white' to="/notices">Notices</Link>
                     <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 text-white' to="/contacts">Contacts</Link>
+                    <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 text-white' to="/gallery">Gallery</Link>
                 </div>
 
 
