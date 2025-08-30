@@ -2,7 +2,10 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div>
+    <div className='w-full relative h-auto'>
+        <nav>
+
+        </nav>
       
     </div>
   )
