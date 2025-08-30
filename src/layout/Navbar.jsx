@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from "../images/logo.png"
 import { Link } from 'react-router-dom'
+import { IoIosArrowDown } from "react-icons/io";
 
 const Navbar = () => {
     return (
@@ -20,13 +21,11 @@ const Navbar = () => {
                     <div className=' w-auto h-14 flex flex-row items-center justify-center gap-2'>
                         <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' to="/">Home</Link>
                         <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' to="/student-account">Student apply</Link>
-                        <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' to="/notices">Notices</Link>
-                        <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' to="/contacts">Contacts</Link>
                     </div>
 
                     <div className=' w-auto h-14 flex  flex-row items-center justify-center gap-2'>
                         <div className='w-auto relative group'>
-                            <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' to="/department">Department</Link>
+                            <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' to="/department">Department <IoIosArrowDown/></Link>
                             <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
                                 <Link className='w-auto px-2 flex h-14 items-center hover:scale-105 transition duration-300' to="/ce">Department of Civil Engineering</Link>
                                 <Link className='w-auto px-2 block h-14 items-center hover:scale-105 transition duration-300' to="/eee">Department of Electrical & Electronic Engineering</Link>
@@ -35,7 +34,7 @@ const Navbar = () => {
                         </div>
                         
                         <div className='w-auto relative group'>
-                            <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' to="/department">Administration</Link>
+                            <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' to="/department">Administration <IoIosArrowDown/></Link>
                             <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start gap-2 bg-white '>
                                 <Link className='w-auto px-2 flex h-14 items-center hover:scale-105 transition duration-300' to="/faculty">Faculty</Link>
                                 <Link className='w-auto px-2 flex h-14 items-center hover:scale-105 transition duration-300' to="/officers">Officers</Link>
@@ -43,7 +42,7 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className='w-auto relative group'>
-                            <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' to="/department">Clubs</Link>
+                            <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' to="/department">Clubs <IoIosArrowDown/></Link>
                             <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start gap-2 bg-white '>
                                 <Link className='w-auto px-2 flex h-14 items-center hover:scale-105 transition duration-300' to="/">Alpha Science Lab</Link>
                                 <Link className='w-auto px-2 flex h-14 items-center hover:scale-105 transition duration-300' to="/">MESL</Link>
@@ -52,12 +51,15 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className='w-auto relative group'>
-                            <p className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' >Academics</p>
+                            <p className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' >Academics <IoIosArrowDown/></p>
                             <div className='w-auto rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
                                 <a className='w-auto px-2 flex h-14 items-center hover:scale-105 transition duration-300' href="https://cmc.du.ac.bd/result.php">Result</a>
                                 <a className='w-auto px-2 flex h-14 items-center hover:scale-105 transition duration-300' href="https://collegeadmission.eis.du.ac.bd/en">Admission</a>
                             </div>
                         </div>
+                        
+                        <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' to="/notices">Notices</Link>
+                        <Link className='w-auto h-14 flex items-center hover:border-b-2 px-4 ' to="/contacts">Contacts</Link>
                     </div>
                    
 
