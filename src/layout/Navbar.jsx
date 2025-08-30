@@ -9,18 +9,18 @@ const Navbar = () => {
         <section className='w-full relative h-auto'>
             <nav className='w-full h-32  flex flex-col items-center justify-between border-b-2 z-40'>
                 <div className='w-full h-20 flex flex-row items-center justify-around'>
-                    <div className='w-auto h-20 flex flex-row items-center justify-center gap-3'>
-                        <a href="/"><img src={logo} alt="" className='h-16 w-16' /></a>
-                        <h1 className='w-auto h-16 text-2xl font-semibold flex items-center'>Mymensingh Engineering College</h1>
+                    <div className='w-auto h-20 flex flex-row items-center justify-center gap-3 px-2'>
+                        <a href="/"><img src={logo} alt="" className='h-14 w-14 md:h-16 md:w-16' /></a>
+                        <h1 className='w-auto h-16 text-lg md:text-xl lg:text-2xl font-semibold flex items-center'>Mymensingh Engineering College</h1>
 
 
                     </div>
 
 
                     <div className=' w-auto h-12 flex flex-row items-center justify-cneter gap-2'>
-                        <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 ' to="/">Home</Link>
-                        <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 ' to="/student-account">Student apply</Link>
-                        <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 ' to="/alumni">Alumni</Link>
+                        <Link className='w-auto h-12 hidden sm:flex  items-center hover:border-b-2 px-4 ' to="/">Home</Link>
+                        <Link className='w-auto h-12 hidden md:flex  items-center hover:border-b-2 px-4 ' to="/student-account">Student apply</Link>
+                        <Link className='w-auto h-12 hidden lg:flex  items-center hover:border-b-2 px-4 ' to="/alumni">Alumni</Link>
                         <p className='w-auto h-12 flex items-center hover:border-b-2 px-4 cursor-pointer '><GiHamburgerMenu /></p>
                     </div>
 
