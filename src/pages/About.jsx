@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-
+import { Link } from 'react-router-dom';
 import { PiChalkboardTeacher,  PiStudentFill } from "react-icons/pi";
 import { PiStudent } from "react-icons/pi";
 import { CreateContext } from '../context/CreateContext'
@@ -28,7 +28,7 @@ const About = () => {
                         <p className='lg:text-7xl md:text-5xl text-4xl'><PiChalkboardTeacher/></p>
                         <div className='w-auto flex flex-col items-start'>
                             <h1 className='md:text-3xl text-lg font-semibold'>{faculty.length}</h1>
-                            <p>Faculty</p>
+                            <Link to='/faculty'>Faculty</Link>
                         </div>
 
                     </div>
