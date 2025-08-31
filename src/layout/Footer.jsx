@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className='w-full h-auto bg-gray-50 flex flex-col items-center justify-center gap-10 pt-8'>
       <div className='w-full h-auto flex flex-col lg:flex-row items-center justify-center gap-10'>
-        <div className='w-auto flex flex-col gap-3 text-lg lg:items-start items-center justify-center'>
+        <div className='w-auto flex flex-col gap-3 text-lg lg:items-start text-center items-center justify-center'>
           <h1>Follow our official social media</h1>
           <div className='w-auto flex flex-row items-center justify-center gap-1'>
             <a className='text-2xl hover:scale-110 transition duration-300 p-2' href="/"><FaFacebook /></a>
