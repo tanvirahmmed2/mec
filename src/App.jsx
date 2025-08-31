@@ -11,6 +11,7 @@ import Administration from "./pages/Administration";
 import Contact from "./pages/Contact";
 import Faculty from "./pages/Faculty";
 import Notices from "./pages/Notices";
+import FacultyProfile from "./pages/FacultyProfile";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/department" element={<Departments />} />
           <Route path="/:title" element={<Department /> } />
           <Route path="/faculty" element={<Faculty/> } />
+          <Route path="/faculty/:name" element={<FacultyProfile/> } />
           <Route path="/administration" element={<Administration /> } />
           <Route path="/contacts" element={<Contact /> } />
           <Route path="/notices" element={<Notices /> } />
