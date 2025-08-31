@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-import Teachers from "../Data/Teachers";
+import Faculty from "../Data/Faculty";
 import deptDatas from "../Data/department"
 
 export const CreateContext = createContext(null);
@@ -12,13 +12,13 @@ export const CreateContext = createContext(null);
 
 
 const CreateContextProvider = (props) => {
-    const [teachers, setTeachers]= useState(Teachers)
+    const [faculty, setFaculty]= useState(Faculty)
     const [deptdatas, setDeptDatas]= useState(deptDatas)
   
 
   const contextValue = {
-    teachers,
-    setTeachers,
+    faculty,
+    setFaculty,
     deptdatas,
     setDeptDatas,
   };

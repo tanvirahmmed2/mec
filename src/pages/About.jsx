@@ -5,7 +5,7 @@ import { CreateContext } from '../context/CreateContext'
 
 const About = () => {
     
-        const { teachers} =useContext(CreateContext)
+        const { faculty} =useContext(CreateContext)
     return (
         <section className='w-full h-auto flex flex-col py-4 p-2 items-center justify-between gap-4'>
             <h1 className='text-3xl font-semibold'>About</h1>
@@ -26,8 +26,8 @@ const About = () => {
                     <div className='w-auto gap-4 h-auto flex flex-row items-center justify-center'>
                         <p className='text-7xl'><PiChalkboardTeacherFill/></p>
                         <div className='w-auto flex flex-col items-start'>
-                            <h1 className='text-3xl font-semibold'>{teachers.length}</h1>
-                            <p>Teachers</p>
+                            <h1 className='text-3xl font-semibold'>{faculty.length}</h1>
+                            <p>Faculty</p>
                         </div>
 
                     </div>

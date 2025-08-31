@@ -9,7 +9,7 @@ const Home = () => {
       
       <About/>
       <Departments/>
-      <Contact/>
+      <Contact/> 
     </div>
   )
 }
