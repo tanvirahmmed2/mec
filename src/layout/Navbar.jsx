@@ -31,7 +31,7 @@ const Navbar = () => {
         setAcademics(!academics)
     }
     return (
-        <section className='w-full relative h-auto'>
+        <section className='w-full  h-auto'>
             <nav className='w-full h-20 sm:h-32  flex flex-col items-center justify-between border-b-2 z-40'>
                 <div className='w-full h-20 flex flex-row items-center justify-around'>
                     <div className='w-auto h-20 flex flex-row items-center justify-center gap-3 px-2'>

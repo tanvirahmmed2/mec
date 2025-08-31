@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="w-full overflow-x-hidden h-auto">
       <Navbar />
-      <div className="w-full min-h-screen">
+      <div className="w-full min-h-screen p-2">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
