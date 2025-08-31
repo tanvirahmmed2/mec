@@ -10,6 +10,7 @@ import Department from "./pages/Department";
 import Administration from "./pages/Administration";
 import Contact from "./pages/Contact";
 import Faculty from "./pages/Faculty";
+import Notices from "./pages/Notices";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/faculty" element={<Faculty/> } />
           <Route path="/administration" element={<Administration /> } />
           <Route path="/contacts" element={<Contact /> } />
+          <Route path="/notices" element={<Notices /> } />
 
           <Route path="/*" element={<Error />} />
         </Routes>
