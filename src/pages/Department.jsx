@@ -21,11 +21,8 @@ const Department = () => {
     <section className='w-full h-auto flex flex-col items-center justify-center gap-6'>
         <h1 className='text-3xl font-semibold text-center'>{department.name}</h1>
         <p>{department.long_details}</p>
-        <div>
-            <p className='text-lg font-semibold'>Total students: {department.total_students}</p>
-            <p className='text-lg font-semibold'>Per year admission seats: {department.new_students_per_year}</p>
-        </div>
-        <Faculty/>
+        
+        <Faculty department={department}/>
     </section>
   )
 }
