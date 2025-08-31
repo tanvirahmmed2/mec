@@ -12,6 +12,9 @@ import Contact from "./pages/Contact";
 import Faculty from "./pages/Faculty";
 import Notices from "./pages/Notices";
 import FacultyProfile from "./pages/FacultyProfile";
+import Staff from "./pages/Staff";
+import Officer from "./pages/Officer";
+import Curriculam from "./pages/Curriculam";
 
 const App = () => {
   return (
@@ -28,6 +31,9 @@ const App = () => {
           <Route path="/administration" element={<Administration /> } />
           <Route path="/contacts" element={<Contact /> } />
           <Route path="/notices" element={<Notices /> } />
+          <Route path="/staff" element={<Staff /> } />
+          <Route path="/officers" element={<Officer /> } />
+          <Route path="/curriculam" element={<Curriculam/> } />
 
           <Route path="/*" element={<Error />} />
         </Routes>

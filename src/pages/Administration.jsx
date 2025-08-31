@@ -2,6 +2,8 @@ import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import Faculty from './Faculty'
 import { CreateContext } from '../context/CreateContext'
+import Officer from './Officer'
+import Staff from './Staff'
 
 const Administration = () => {
   const { faculty } = useContext(CreateContext)
@@ -18,6 +20,8 @@ const Administration = () => {
       </div>
       
       <Faculty />
+      <Officer/>
+      <Staff/>
 
     </div>
   )
