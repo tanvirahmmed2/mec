@@ -19,6 +19,7 @@ const Department = () => {
   const department = filteredDept[0]
   return (
     <section className='w-full h-auto flex flex-col items-center justify-center gap-6'>
+        <img src={department.banner} alt="" />
         <h1 className='text-3xl font-semibold text-center'>{department.name}</h1>
         <p>{department.long_details}</p>
         
