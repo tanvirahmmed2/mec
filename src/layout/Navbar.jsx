@@ -110,42 +110,42 @@ const Navbar = () => {
 
             <div className={`w-[200px]  lg:hidden absolute top-20 z-50 right-0 bg-white  p-4 gap-4 h-auto items-start justify-start flex-col ${menu ? "flex" : "hidden"}`}>
 
-                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/">Home</Link>
-                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/about">About</Link>
+                <a className='w-auto flex items-center hover:border-b-2 px-4' href="/">Home</a>
+                <a className='w-auhref flex items-center hover:border-b-2 px-4' href="/about">About</a>
                 <div className='w-auto relative group'>
                     <p className='w-auto  flex items-center hover:border-b-2 px-4 gap-2 cursor-pointer ' onClick={handledept}>Department <IoIosArrowDown /></p>
                     <div className={`w-[300px] rounded-md absolute right-[150px] top-0  p-2 flex-col items-start  bg-white  ${department?"flex": "hidden"}`}>
-                        <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/department">Department</Link>
-                        <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/ce">Department of Civil Engineering</Link>
-                        <Link className='w-auto px-2 block h-12 items-center hover:scale-105 transition duration-300' to="/eee">Department of Electrical & Electronic Engineering</Link>
-                        <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/cse">Department of Computer Science & Engineering</Link>
+                        <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="/department">Department</a>
+                        <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="/ce">Department of Civil Engineering</a>
+                        <a className='w-auto px-2 block h-12 items-center hover:scale-105 transition duration-300' href="/eee">Department of Electrical & Electronic Engineering</a>
+                        <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="/cse">Department of Computer Science & Engineering</a>
                     </div>
                 </div>
                 <div className='w-auto  relative group'>
                     <p className='w-auto  flex items-center hover:border-b-2 px-4 gap-2 cursor-pointer ' onClick={handleadmin} >Administration <IoIosArrowDown /></p>
                     <div className={`w-auto rounded-md absolute right-[175px] top-0 ${administration?"flex": "hidden"} p-2 flex-col items-start  bg-white `}>
-                        <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/adminitration">Administration</Link>
-                        <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/faculty">Faculty</Link>
-                        <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/faculty">Faculty</Link>
-                        <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/officers">Officers</Link>
-                        <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/staff">Staff</Link>
+                        <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="/adminitration">Administration</a>
+                        <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="/faculty">Faculty</a>
+                        <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="/faculty">Faculty</a>
+                        <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="/officers">Officers</a>
+                        <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="/staff">Staff</a>
                     </div>
                 </div>
                 <div className='w-auto relative group'>
                     <p className='w-auto  flex items-center hover:border-b-2 px-4 gap-2 cursor-pointer ' onClick={handleacademics}>Academics <IoIosArrowDown /></p>
                     <div className={`w-auto rounded-md absolute right-[145px] top-0 ${academics?"flex": "hidden"} p-2 flex-col items-start  bg-white `}>
-                        <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="curriculam">Curriculam</Link>
+                        <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="curriculam">Curriculam</a>
                         <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="https://cmc.du.ac.bd/result.php">Result</a>
                         <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="https://collegeadmission.eis.du.ac.bd/en">Admission</a>
                     </div>
                 </div>
-                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/clubs">Clubs</Link>
-                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/society">Society</Link>
-                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/alumni">Alumni</Link>
-                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/notices">Notice</Link>
-                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/gallery">Gallery</Link>
-                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/contacts">Contacts</Link>
-                <Link className='w-auto flex items-center  px-4' to="/student-account">Student Login</Link>
+                <a className='w-auto flex items-center hover:border-b-2 px-4' href="/clubs">Clubs</a>
+                <a className='w-auto flex items-center hover:border-b-2 px-4' href="/society">Society</a>
+                <a className='w-auto flex items-center hover:border-b-2 px-4' href="/alumni">Alumni</a>
+                <a className='w-auto flex items-center hover:border-b-2 px-4' href="/notices">Notice</a>
+                <a className='w-auto flex items-center hover:border-b-2 px-4' href="/gallery">Gallery</a>
+                <a className='w-auto flex items-center hover:border-b-2 px-4' href="/contacts">Contacts</a>
+                <a className='w-auto flex items-center  px-4' href="/student-account">Student Login</a>
 
             </div>
 
