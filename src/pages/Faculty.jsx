@@ -1,27 +1,10 @@
-import React, { useContext } from 'react'
-import { Link } from 'react-router-dom'
-import { CreateContext } from '../context/CreateContext'
+import React from 'react'
 
-const Faculty = (props) => {
-  const { faculty } = useContext(CreateContext)
-  const {  title } = props
-  const filteredFaculty = faculty.filter((faculty) => faculty.dept === `${title}`);
-
+const Faculty = () => {
   return (
-    <section>
-      <div className='w-full flex flex-wrap gap-4 justify-center'>
-        {filteredFaculty.map((faculty) => {
-          const { id, name, designation } = faculty
-          return <div key={id} className='w-[300px]  h-auto flex flex-col gap-2 p-2 border-2 rounded-lg hover:shadow-lg'>
-            <p></p>
-            <Link className='font-semibold text-lg' to='/'>{name}</Link>
-            <p>{designation}</p>
-          </div>
-        })}
-
-      </div>
-    </section>
-
+    <div>
+      
+    </div>
   )
 }
 

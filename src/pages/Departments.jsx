@@ -16,7 +16,7 @@ const Departments = () => {
                             return <div key={title} className='w-[280px] border-2 rounded-lg p-2 overflow-hidden shadow-red-800 flex flex-col items-start gap-2 hover:shadow-lg transition duration-300 cursor-pointer'>
                                 <img src={banner} alt="" />
                                 <p>{short_details}</p>
-                                <Link to={`/department/${title}`} className='font-semibold text-red-800 text-lg'>{name}</Link>
+                                <Link to={`/${title}`} className='font-semibold text-red-800 text-lg'>{name}</Link>
                             </div>
                         })
                     }

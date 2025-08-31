@@ -14,12 +14,12 @@ const App = () => {
   return (
     <div className="w-full overflow-x-hidden h-auto">
       <Navbar />
-      <div className="w-full min-h-screen p-2 py-6 flex items-center justify-center">
+      <div className="w-full min-h-screen p-2 py- flex items-center justify-center">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/department" element={<Departments />} />
-          <Route path="/department/:title" element={<Department /> } />
+          <Route path="/:title" element={<Department /> } />
           <Route path="/administration" element={<Administration /> } />
           <Route path="/contacts" element={<Contact /> } />
 

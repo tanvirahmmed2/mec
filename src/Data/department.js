@@ -19,6 +19,13 @@ const deptDatas = [
       "Power System & High Voltage Lab",
       "Digital Signal Processing Lab",
       "Structural Machine Lab"
+    ],
+    "clubs" :[
+      "MEC Reachers Club",
+      "MESL",
+      "Alpha Science Lab",
+      "MEC Debate Society",
+      "MEC Films and Photography Society"
     ]
   },
   {
@@ -45,6 +52,10 @@ const deptDatas = [
       "Language Lab",
       "AutoCAD Lab",
       "Structural Engineering Lab"
+    ],
+    "clubs" : [
+      "MEC Debate Society",
+      "MEC Films and Photography Society"
     ]
   },
   {
@@ -65,6 +76,11 @@ const deptDatas = [
       "ACM Lab",
       "Digital Logic Design Lab",
       "ATTS Lab"
+    ],
+    "clubs" : [
+      "MEC Computer Club",
+      "MEC Debate Society",
+      "MEC Films and Photography Society"
     ]
   },
   {
@@ -78,6 +94,10 @@ const deptDatas = [
     "lab_facilities": [
       "Physics Lab",
       "Chemistry Lab"
+    ],
+    "clubs" : [
+      "MEC Debate Society",
+      "MEC Films and Photography Society"
     ]
   }
 ]
