@@ -13,10 +13,9 @@ const Departments = () => {
                     {
                         deptdatas.map((dept) => {
                             const { name, title, short_details } = dept
-                            return <div key={title} className='w-[280px] shadow-sm rounded-lg p-1 overflow-hidden shadow-red-800 flex flex-col items-start gap-2 hover:scale-[1.02] transition duration-300 cursor-pointer'>
+                            return <div key={title} className='w-[280px] border-2 rounded-lg p-2 overflow-hidden shadow-red-800 flex flex-col items-start gap-2 hover:shadow-lg transition duration-300 cursor-pointer'>
                                 <p>{short_details}</p>
-                                <h1 className='font-semibold text-red-800'>{name}</h1>
-                                <Link to={`/department${title}`} className='italic'>Visit</Link>
+                                <Link to={`/department${title}`} className='font-semibold text-red-800'>{name}</Link>
                             </div>
                         })
                     }

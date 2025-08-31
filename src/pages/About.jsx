@@ -25,25 +25,25 @@ const About = () => {
 
             <div className='w-full p-4 h-auto bg-red-100 flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-20'>
                     <div className='w-auto gap-4 h-auto flex flex-row items-center justify-center'>
-                        <p className='text-7xl'><PiChalkboardTeacher/></p>
+                        <p className='lg:text-7xl md:text-5xl text-4xl'><PiChalkboardTeacher/></p>
                         <div className='w-auto flex flex-col items-start'>
-                            <h1 className='text-3xl font-semibold'>{faculty.length}</h1>
+                            <h1 className='md:text-3xl text-lg font-semibold'>{faculty.length}</h1>
                             <p>Faculty</p>
                         </div>
 
                     </div>
                     <div className='w-auto gap-4 h-auto flex flex-row items-center justify-center'>
-                        <p className='text-7xl'><PiStudent/></p>
+                        <p className='lg:text-7xl md:text-5xl text-4xl'><PiStudent/></p>
                         <div className='w-auto flex flex-col items-start'>
-                            <h1 className='text-3xl font-semibold'>700+</h1>
+                            <h1 className='md:text-3xl text-lg font-semibold'>700+</h1>
                             <p>Students</p>
                         </div>
 
                     </div>
                     <div className='w-auto gap-4 h-auto flex flex-row items-center justify-center'>
-                        <p className='text-7xl'><PiStudentFill/></p>
+                        <p className='lg:text-7xl md:text-5xl text-4xl'><PiStudentFill/></p>
                         <div className='w-auto flex flex-col items-start'>
-                            <h1 className='text-3xl font-semibold'>1000+</h1>
+                            <h1 className='md:text-3xl text-lg font-semibold'>1000+</h1>
                             <p>Graduates</p>
                         </div>
 
