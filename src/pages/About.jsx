@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 
-import { PiChalkboardTeacherFill } from "react-icons/pi";
+import { PiChalkboardTeacher,  PiStudentFill } from "react-icons/pi";
+import { PiStudent } from "react-icons/pi";
 import { CreateContext } from '../context/CreateContext'
 
 const About = () => {
@@ -22,9 +23,9 @@ const About = () => {
 
 
 
-            <div className='w-full p-4 h-auto bg-gray-100 flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-20'>
+            <div className='w-full p-4 h-auto bg-red-100 flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-20'>
                     <div className='w-auto gap-4 h-auto flex flex-row items-center justify-center'>
-                        <p className='text-7xl'><PiChalkboardTeacherFill/></p>
+                        <p className='text-7xl'><PiChalkboardTeacher/></p>
                         <div className='w-auto flex flex-col items-start'>
                             <h1 className='text-3xl font-semibold'>{faculty.length}</h1>
                             <p>Faculty</p>
@@ -32,7 +33,7 @@ const About = () => {
 
                     </div>
                     <div className='w-auto gap-4 h-auto flex flex-row items-center justify-center'>
-                        <p className='text-7xl'><PiChalkboardTeacherFill/></p>
+                        <p className='text-7xl'><PiStudent/></p>
                         <div className='w-auto flex flex-col items-start'>
                             <h1 className='text-3xl font-semibold'>700+</h1>
                             <p>Students</p>
@@ -40,7 +41,7 @@ const About = () => {
 
                     </div>
                     <div className='w-auto gap-4 h-auto flex flex-row items-center justify-center'>
-                        <p className='text-7xl'><PiChalkboardTeacherFill/></p>
+                        <p className='text-7xl'><PiStudentFill/></p>
                         <div className='w-auto flex flex-col items-start'>
                             <h1 className='text-3xl font-semibold'>1000+</h1>
                             <p>Graduates</p>

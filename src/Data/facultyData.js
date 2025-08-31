@@ -1,4 +1,4 @@
-const Faculty = [
+const facultyData = [
   {
     id: 1,
     name: "Prof. Dr. Engr. Md. Mizanur Rahman",
@@ -427,4 +427,4 @@ const Faculty = [
   },
 ];
 
-export default Faculty;
+export default facultyData;
