@@ -52,6 +52,7 @@ const Navbar = () => {
                 </div>
 
                 <div className=' w-full h-12 hidden sm:flex  flex-row items-center justify-center bg-red-800'>
+                    <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' to="/about">About</Link>
                     <div className='w-auto relative group'>
                         <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' to="/department">Department <IoIosArrowDown /></Link>
                         <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>

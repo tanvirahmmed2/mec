@@ -4,6 +4,7 @@ import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
 import Home from "./layout/Home";
 import Error from "./layout/Error";
+import About from "./pages/About";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <div className="w-full min-h-screen">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
 
           <Route path="/*" element={<Error />} />
         </Routes>
