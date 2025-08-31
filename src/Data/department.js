@@ -1,7 +1,7 @@
 const deptDatas=[
   {
     name: "Electrical and Electronic Engineering (EEE)",
-    title: "EEE",
+    title: "/eee",
     total_students: 240,
     new_students_per_year: 60,
     lab_facilities: [
@@ -15,7 +15,7 @@ const deptDatas=[
   },
   {
     name: "Civil Engineering (CE)",
-    title: "CE",
+    title: "/ce",
     total_students: 240,
     new_students_per_year: 60,
     lab_facilities: [
@@ -38,7 +38,7 @@ const deptDatas=[
   },
   {
     name: "Computer Science and Engineering (CSE)",
-    title: "CSE",
+    title: "/cse",
     total_students: 240,
     new_students_per_year: 60,
     lab_facilities: [
@@ -55,7 +55,7 @@ const deptDatas=[
   },
   {
     name: "Department of General Science (Non-tech)",
-    title: "General Science",
+    title: "/gs",
     total_students: 240,
     new_students_per_year: 60,
     lab_facilities: ["Physics Lab", "Chemistry Lab"],

@@ -59,6 +59,7 @@ const Navbar = () => {
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/ce">Department of Civil Engineering</Link>
                             <Link className='w-auto px-2 block h-12 items-center hover:scale-105 transition duration-300' to="/eee">Department of Electrical & Electronic Engineering</Link>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/cse">Department of Computer Science & Engineering</Link>
+                            <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/gs">Department of General Science (Non-tech)</Link>
                         </div>
                     </div>
 
@@ -120,6 +121,7 @@ const Navbar = () => {
                         <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="/ce">Department of Civil Engineering</a>
                         <a className='w-auto px-2 block h-12 items-center hover:scale-105 transition duration-300' href="/eee">Department of Electrical & Electronic Engineering</a>
                         <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="/cse">Department of Computer Science & Engineering</a>
+                        <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="/gs">Department of General Science (Non-tech)</a>
                     </div>
                 </div>
                 <div className='w-auto  relative group'>
