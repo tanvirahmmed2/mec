@@ -7,6 +7,8 @@ import Error from "./layout/Error";
 import About from "./pages/About";
 import Departments from "./pages/Departments";
 import Department from "./pages/Department";
+import Administration from "./pages/Administration";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -17,7 +19,9 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/department" element={<Departments />} />
-          <Route path="/department/:title" element={<Department />} />
+          <Route path="/department/:title" element={<Department /> } />
+          <Route path="/administration" element={<Administration /> } />
+          <Route path="/contacts" element={<Contact /> } />
 
           <Route path="/*" element={<Error />} />
         </Routes>
