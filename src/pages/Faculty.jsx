@@ -5,7 +5,9 @@ import { CreateContext } from '../context/CreateContext'
 const Faculty = () => {
   const {faculty} =useContext(CreateContext)
   return (
-    <div className='w-full flex flex-wrap gap-8 justify-center'>
+    <section className='w-full h-auto flex flex-col items-center justify-center gap-6 py-6'>
+      <h1 className="text-3xl font-semibold text-center">Faculties</h1>
+      <div className='w-full flex flex-wrap gap-8 justify-center'>
       {
         faculty.map((faculty)=>{
           const { id, name, designation, image , department} = faculty
@@ -19,6 +21,7 @@ const Faculty = () => {
       }
       
     </div>
+    </section>
   )
 }
 

@@ -16,7 +16,7 @@ const Administration = () => {
         <p className='italic'>{principle.designation}</p>
         <p>{principle.department}</p>
       </div>
-      <h1 className="text-3xl font-semibold text-center">Faculties</h1>
+      
       <Faculty />
 
     </div>
