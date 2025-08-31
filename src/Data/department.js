@@ -1,6 +1,7 @@
 import eee_banner from "../images/banner/eee_banner.jpg"
 import ce_banner from "../images/banner/ce_banner.jpg"
 import cse_banner from "../images/banner/cse_banner.jpg"
+import gs_banner from "../images/banner/gs_banner.jpg"
 
 
 const deptDatas = [
@@ -90,7 +91,7 @@ const deptDatas = [
     "new_students_per_year": 60,
     "short_details": "The General Science department provides fundamental courses in physics, chemistry, and mathematics to support core engineering programs. It builds a strong scientific foundation for technical studies across all departments.",
     "long_details": "The General Science department delivers essential foundational knowledge in physics, chemistry, and mathematics that underpins all engineering disciplines at MEC. The curriculum emphasizes conceptual understanding, analytical reasoning, and laboratory experimentation to equip students with problem-solving skills applicable in technical fields. Laboratories provide hands-on experience in physics and chemistry experiments, reinforcing theoretical learning. The department prepares students for advanced engineering courses by instilling a strong scientific base and developing critical thinking, quantitative analysis, and research skills. Graduates from this department support their respective engineering fields with solid technical knowledge, contributing to innovation and excellence in engineering projects and research initiatives.",
-    "banner": cse_banner,
+    "banner": gs_banner,
     "lab_facilities": [
       "Physics Lab",
       "Chemistry Lab"

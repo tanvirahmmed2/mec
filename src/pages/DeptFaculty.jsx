@@ -14,7 +14,7 @@ const DeptFaculty = (props) => {
           const { id, name, designation, image } = faculty
           return <div key={id} className='w-[300px]  h-auto flex flex-col gap-2 p-2 border-2 rounded-lg hover:shadow-lg'>
             <img src={image} alt=""  className='w-[300px]'/>
-            <Link className='font-semibold text-lg' to='/'>{name}</Link>
+            <Link className='font-semibold text-lg' to={`/faculty/${name }`}>{name}</Link>
             <p>{designation}</p>
           </div>
         })}
