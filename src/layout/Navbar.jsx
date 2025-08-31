@@ -5,9 +5,30 @@ import { IoIosArrowDown } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
-    const [menu, setMenu]=useState(false)
-    const handlemenu=()=>{
+
+    const [menu, setMenu] = useState(false)
+    const handlemenu = () => {
         setMenu(!menu)
+    }
+
+    const [department, setDepartment]= useState(false)
+    const [administration, setAdministration]= useState(false)
+    const [academics, setAcademics]= useState(false)
+
+    const handleadmin=()=>{
+        setAdministration(!administration)
+        setDepartment(false)
+        setAcademics(false)
+    }
+    const handledept=()=>{
+        setAdministration(false)
+        setDepartment(!department)
+        setAcademics(false)
+    }
+    const handleacademics=()=>{
+        setAdministration(false)
+        setDepartment(false)
+        setAcademics(!academics)
     }
     return (
         <section className='w-full relative h-auto'>
@@ -41,7 +62,7 @@ const Navbar = () => {
                     </div>
 
                     <div className='w-auto hidden lg:block relative group'>
-                        <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' to="/department">Administration <IoIosArrowDown /></Link>
+                        <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' to="/administration">Administration <IoIosArrowDown /></Link>
                         <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/faculty">Faculty</Link>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/officers">Officers</Link>
@@ -49,7 +70,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className='w-auto hidden md:block relative group'>
-                        <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' to="/department">Clubs <IoIosArrowDown /></Link>
+                        <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' to="clubs">Clubs <IoIosArrowDown /></Link>
                         <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/">MEC Research Club</Link>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/">Alpha Science Lab</Link>
@@ -62,6 +83,7 @@ const Navbar = () => {
                     <div className='w-auto relative group'>
                         <p className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' >Academics <IoIosArrowDown /></p>
                         <div className='w-auto rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
+                            <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="curriculam">Curriculam</Link>
                             <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="https://cmc.du.ac.bd/result.php">Result</a>
                             <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="https://collegeadmission.eis.du.ac.bd/en">Admission</a>
                         </div>
@@ -86,13 +108,37 @@ const Navbar = () => {
 
             </nav>
 
-            <div className={`w-[200px]  lg:hidden absolute top-20 z-50 right-0 bg-white  p-4 gap-4 h-auto items-start justify-start flex-col ${menu? "flex" : "hidden"}`}>
-                
+            <div className={`w-[200px]  lg:hidden absolute top-20 z-50 right-0 bg-white  p-4 gap-4 h-auto items-start justify-start flex-col ${menu ? "flex" : "hidden"}`}>
+
                 <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/">Home</Link>
                 <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/about">About</Link>
-                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/department">Department</Link>
-                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/administration">Administration</Link>
-                <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/academics">Academics</Link>
+                <div className='w-auto relative group'>
+                    <p className='w-auto  flex items-center hover:border-b-2 px-4 gap-2 cursor-pointer ' onClick={handledept}>Department <IoIosArrowDown /></p>
+                    <div className={`w-[300px] rounded-md absolute right-[150px] top-0  p-2 flex-col items-start  bg-white  ${department?"flex": "hidden"}`}>
+                        <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/department">Department</Link>
+                        <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/ce">Department of Civil Engineering</Link>
+                        <Link className='w-auto px-2 block h-12 items-center hover:scale-105 transition duration-300' to="/eee">Department of Electrical & Electronic Engineering</Link>
+                        <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/cse">Department of Computer Science & Engineering</Link>
+                    </div>
+                </div>
+                <div className='w-auto  relative group'>
+                    <p className='w-auto  flex items-center hover:border-b-2 px-4 gap-2 cursor-pointer ' onClick={handleadmin} >Administration <IoIosArrowDown /></p>
+                    <div className={`w-auto rounded-md absolute right-[175px] top-0 ${administration?"flex": "hidden"} p-2 flex-col items-start  bg-white `}>
+                        <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/adminitration">Administration</Link>
+                        <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/faculty">Faculty</Link>
+                        <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/faculty">Faculty</Link>
+                        <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/officers">Officers</Link>
+                        <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/staff">Staff</Link>
+                    </div>
+                </div>
+                <div className='w-auto relative group'>
+                    <p className='w-auto  flex items-center hover:border-b-2 px-4 gap-2 cursor-pointer ' onClick={handleacademics}>Academics <IoIosArrowDown /></p>
+                    <div className={`w-auto rounded-md absolute right-[145px] top-0 ${academics?"flex": "hidden"} p-2 flex-col items-start  bg-white `}>
+                        <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="curriculam">Curriculam</Link>
+                        <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="https://cmc.du.ac.bd/result.php">Result</a>
+                        <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="https://collegeadmission.eis.du.ac.bd/en">Admission</a>
+                    </div>
+                </div>
                 <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/clubs">Clubs</Link>
                 <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/society">Society</Link>
                 <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/alumni">Alumni</Link>
@@ -100,6 +146,7 @@ const Navbar = () => {
                 <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/gallery">Gallery</Link>
                 <Link className='w-auto flex items-center hover:border-b-2 px-4' to="/contacts">Contacts</Link>
                 <Link className='w-auto flex items-center  px-4' to="/student-account">Student Login</Link>
+
             </div>
 
 
