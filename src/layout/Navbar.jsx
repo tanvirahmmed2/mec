@@ -93,7 +93,7 @@ const Navbar = () => {
                     <div className='w-auto hidden lg:block relative group'>
                         <p className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' >Download <IoIosArrowDown /></p>
                         <div className='w-auto rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
-                            <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="https://cmc.du.ac.bd/result.php">PDF</a>
+                            <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="https://cmc.du.ac.bd/result.php">Result</a>
                         </div>
                     </div>
 

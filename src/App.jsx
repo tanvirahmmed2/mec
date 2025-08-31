@@ -15,6 +15,7 @@ import FacultyProfile from "./pages/FacultyProfile";
 import Staff from "./pages/Staff";
 import Officer from "./pages/Officer";
 import Curriculam from "./pages/Curriculam";
+import Gallery from "./pages/Gallery";
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/staff" element={<Staff /> } />
           <Route path="/officers" element={<Officer /> } />
           <Route path="/curriculam" element={<Curriculam/> } />
+          <Route path="/gallery" element={<Gallery/> } />
 
           <Route path="/*" element={<Error />} />
         </Routes>
