@@ -4,7 +4,7 @@ import Departments from '../pages/Departments'
 
 const Home = () => {
   return (
-    <div className='w-auto min-h-screen bg-red-300'>
+    <div className='w-auto min-h-screen '>
       
       <About/>
       <Departments/>

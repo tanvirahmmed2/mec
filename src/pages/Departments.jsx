@@ -15,7 +15,7 @@ const Departments = () => {
                             return <div key={title} className='w-[280px] shadow-sm rounded-lg p-1 overflow-hidden shadow-red-800 flex flex-col items-start gap-2 hover:scale-[1.02] transition duration-300 cursor-pointer'>
                                 <p>{short_details}</p>
                                 <h1 className='font-semibold text-red-800'>{name}</h1>
-                                <Link to={title} className='italic'>Visit</Link>
+                                <Link to={`/department${title}`} className='italic'>Visit</Link>
                             </div>
                         })
                     }

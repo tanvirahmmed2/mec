@@ -6,16 +6,18 @@ import Home from "./layout/Home";
 import Error from "./layout/Error";
 import About from "./pages/About";
 import Departments from "./pages/Departments";
+import Department from "./pages/Department";
 
 const App = () => {
   return (
     <div className="w-full overflow-x-hidden h-auto">
       <Navbar />
-      <div className="w-full min-h-screen p-2">
+      <div className="w-full min-h-screen p-2 py-6">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/department" element={<Departments />} />
+          <Route path="/department/:title" element={<Department />} />
 
           <Route path="/*" element={<Error />} />
         </Routes>
