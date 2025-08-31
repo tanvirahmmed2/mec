@@ -4,7 +4,6 @@ import { CreateContext } from '../context/CreateContext'
 
 const Departments = () => {
     const {deptdatas} =useContext(CreateContext)
-    console.log(deptdatas)
     return (
         <section className='w-full h-auto flex flex-col items-center justify-center gap-6'>
             <h1 className='text-3xl font-semibold'>Our Departments</h1>
@@ -23,6 +22,8 @@ const Departments = () => {
                     }
 
                 </div>
+
+                
 
                 <div>
                     

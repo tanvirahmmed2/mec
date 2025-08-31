@@ -4,7 +4,7 @@ import Departments from '../pages/Departments'
 
 const Home = () => {
   return (
-    <div className='w-auto min-h-screen '>
+    <div className='w-auto min-h-screen flex flex-col items-center justify-center gap-12 '>
       
       <About/>
       <Departments/>

@@ -20,6 +20,7 @@ const CreateContextProvider = (props) => {
     teachers,
     setTeachers,
     deptdatas,
+    setDeptDatas,
   };
 
   return (
