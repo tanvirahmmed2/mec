@@ -10,7 +10,7 @@ const Footer = () => {
     setYear(new Date().getFullYear())
   }, [])
   return (
-    <div className='w-full h-auto bg-gray-50 flex flex-col items-center justify-center py-8 gap-10'>
+    <div className='w-full h-auto bg-gray-50 flex flex-col items-center justify-center gap-10 pt-8'>
       <div className='w-full h-auto flex flex-col lg:flex-row items-center justify-center gap-10'>
         <div className='w-auto flex flex-col gap-3 text-lg lg:items-start items-center justify-center'>
           <h1>Follow our official social media</h1>
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
 
       </div>
-      <div className='w-full flex flex-col items-center justify-center gap-2'>
+      <div className='w-full flex flex-col items-center justify-center gap-2 py-8  bg-red-800 text-white'>
         <img src={logo} alt="" className='h-20' />
         <h1 className='text-xl font-semibold'>Mymensingh Engineering College</h1>
         <p>Established in 2007</p>
