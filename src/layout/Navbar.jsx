@@ -127,8 +127,7 @@ const Navbar = () => {
                 <div className='w-auto  relative group'>
                     <p className='w-auto  flex items-center hover:border-l-2  px-4 gap-2 cursor-pointer ' onClick={handleadmin} >Administration <IoIosArrowDown /></p>
                     <div className={`w-auto rounded-md gap-2  right-[175px] top-0 ${administration?"flex": "hidden"} p-2 flex-col items-start  `}>
-                        <a className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' href="/adminitration">Administration</a>
-                        <a className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' href="/faculty">Faculty</a>
+                        <a className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' href="/administration">Administration</a>
                         <a className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' href="/faculty">Faculty</a>
                         <a className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' href="/officers">Officers</a>
                         <a className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' href="/staff">Staff</a>
