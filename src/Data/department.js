@@ -6,7 +6,7 @@ import cse_banner from "../images/banner/cse_banner.jpg"
 const deptDatas = [
   {
     "name": "Electrical and Electronic Engineering (EEE)",
-    "title": "/eee",
+    "title": "eee",
     "total_students": "200+",
     "new_students_per_year": 60,
     "short_details": "The EEE department focuses on electrical systems, electronics, power engineering, communication, and digital technologies. It provides hands-on training through advanced labs to prepare students for careers in power, electronics, and telecommunication industries.",
@@ -23,7 +23,7 @@ const deptDatas = [
   },
   {
     "name": "Civil Engineering (CE)",
-    "title": "/ce",
+    "title": "ce",
     "total_students": "200+",
     "new_students_per_year": 60,
     "short_details": "The CE department emphasizes construction, structural analysis, transportation, environmental, and geotechnical engineering. Students gain practical experience through labs, workshops, and design studios to build sustainable infrastructure.",
@@ -49,7 +49,7 @@ const deptDatas = [
   },
   {
     "name": "Computer Science and Engineering (CSE)",
-    "title": "/cse",
+    "title": "cse",
     "total_students": "200+",
     "new_students_per_year": 60,
     "short_details": "The CSE department specializes in software engineering, algorithms, networking, and emerging technologies like AI and data science. It equips students with both theoretical knowledge and practical skills in computer systems and programming.",
@@ -69,7 +69,7 @@ const deptDatas = [
   },
   {
     "name": "Department of General Science (Non-tech)",
-    "title": "/gs",
+    "title": "gs",
     "total_students": "200+",
     "new_students_per_year": 60,
     "short_details": "The General Science department provides fundamental courses in physics, chemistry, and mathematics to support core engineering programs. It builds a strong scientific foundation for technical studies across all departments.",

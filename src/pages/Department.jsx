@@ -6,7 +6,7 @@ import Faculty from './Faculty';
 const Department = () => {
       const { title } = useParams();
 
-  const filteredDept = deptDatas.filter((dept) => dept.title === `/${title}`);
+  const filteredDept = deptDatas.filter((dept) => dept.title === `${title}`);
 
   if (filteredDept.length === 0) {
     return (
@@ -23,7 +23,7 @@ const Department = () => {
         <h1 className='text-3xl font-semibold text-center'>{department.name}</h1>
         <p>{department.long_details}</p>
         
-        <Faculty department={department}/>
+        <Faculty title={department.title} />
     </section>
   )
 }
