@@ -26,7 +26,7 @@ const Footer = () => {
           <p>Rahamatpur,Mymensingh, Mymensingh, Bangladesh</p>
         </div>
         <div>
-          <iframe title="Google Maps location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6092.248193296725!2d90.3446543251098!3d24.77927088624744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3756490c5026b00d%3A0x133cddb37ae9809!2sMymensingh%20Engineering%20College!5e0!3m2!1sen!2sbd!4v1756574794077!5m2!1sen!2sbd" width="400" height="200"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe title="Google Maps location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6092.248193296725!2d90.3446543251098!3d24.77927088624744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3756490c5026b00d%3A0x133cddb37ae9809!2sMymensingh%20Engineering%20College!5e0!3m2!1sen!2sbd!4v1756574794077!5m2!1sen!2sbd" width="400" height="200"  ></iframe>
         </div>
 
       </div>

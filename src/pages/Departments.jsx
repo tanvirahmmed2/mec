@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import deptDatas from "../Data/department"
+import { CreateContext } from '../context/CreateContext'
 
 const Departments = () => {
+    const {deptdatas} =useContext(CreateContext)
+    console.log(deptdatas)
     return (
         <section className='w-full h-auto flex flex-col items-center justify-center gap-6'>
             <h1 className='text-3xl font-semibold'>Our Departments</h1>
@@ -10,7 +12,7 @@ const Departments = () => {
 
                 <div className='w-full h-auto flex flex-wrap justify-center gap-6'>
                     {
-                        deptDatas.map((dept) => {
+                        deptdatas.map((dept) => {
                             const { name, title, short_details } = dept
                             return <div key={title} className='w-[280px] shadow-sm rounded-lg p-1 overflow-hidden shadow-red-800 flex flex-col items-start gap-2 hover:scale-[1.02] transition duration-300 cursor-pointer'>
                                 <p>{short_details}</p>
