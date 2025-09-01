@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import about_img from "/about.jpg"
+import about_img from "../images/about.jpg"
 import { Link } from 'react-router-dom';
 import { PiChalkboardTeacher, PiStudentFill } from "react-icons/pi";
 import { PiStudent } from "react-icons/pi";
