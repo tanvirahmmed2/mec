@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 const images = [
-  '/slider/shaheed_minar.jpg',
   '/slider/field.jpg',
   '/slider/field_2.jpg',
   '/slider/mukti_hall.jpg',
