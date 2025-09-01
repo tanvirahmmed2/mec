@@ -6,7 +6,7 @@ import gs_banner from "../images/banner/gs_banner.jpg"
 
 const deptDatas = [
   {
-    "name": "Electrical and Electronic Engineering (EEE)",
+    "name": "Department of Electrical and Electronic Engineering (EEE)",
     "title": "eee",
     "total_students": "200+",
     "new_students_per_year": 60,
@@ -30,7 +30,7 @@ const deptDatas = [
     ]
   },
   {
-    "name": "Civil Engineering (CE)",
+    "name": "Department of Civil Engineering (CE)",
     "title": "ce",
     "total_students": "200+",
     "new_students_per_year": 60,
@@ -60,7 +60,7 @@ const deptDatas = [
     ]
   },
   {
-    "name": "Computer Science and Engineering (CSE)",
+    "name": "Department of Computer Science and Engineering (CSE)",
     "title": "cse",
     "total_students": "200+",
     "new_students_per_year": 60,
