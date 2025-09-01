@@ -44,8 +44,8 @@ const Navbar = () => {
 
                     <div className=' w-auto h-12 flex flex-row items-center justify-cneter gap-2'>
                         <Link className='w-auto h-12 hidden sm:flex  items-center hover:border-b-2 px-4 ' to="/">Home</Link>
-                        <Link className='w-auto h-12 hidden md:flex  items-center hover:border-b-2 px-4 ' to="/student-account">Student apply</Link>
-                        <Link className='w-auto h-12 hidden lg:flex  items-center hover:border-b-2 px-4 ' to="/alumni">Alumni</Link>
+                        <Link className='w-auto h-12 hidden md:flex  items-center hover:border-b-2 px-4 ' to="/">Student apply</Link>
+                        <Link className='w-auto h-12 hidden lg:flex  items-center hover:border-b-2 px-4 ' to="/">Alumni</Link>
                         <p className='w-auto h-12 flex lg:hidden items-center hover:border-b-2 px-4 cursor-pointer ' onClick={handlemenu}><GiHamburgerMenu /></p>
                     </div>
 
@@ -145,13 +145,13 @@ const Navbar = () => {
                     </div>
                 </div>
                 <a className='w-auto flex items-center hover:border-l-2 px-4' href="/clubs">Clubs</a>
-                <a className='w-auto flex items-center hover:border-l-2 px-4' href="/alumni">Alumni</a>
+                <a className='w-auto flex items-center hover:border-l-2 px-4' href="/">Alumni</a>
                 <a className='w-auto flex items-center hover:border-l-2 px-4' href="/notices">Notice</a>
                 <a className='w-auto flex items-center hover:border-l-2 px-4' href="/gallery">Gallery</a>
                 <a className='w-auto flex items-center hover:border-l-2 px-4' href="/gallery">Gallery</a>
                 <a className='w-auto flex items-center hover:border-l-2 px-4' href="/hostel">Hostel</a>
                 <a className='w-auto flex items-center hover:border-l-2 px-4' href="/library">Library</a>
-                <a className='w-auto flex items-center hover:border-l-2  px-4' href="/student-account">Student Login</a>
+                <a className='w-auto flex items-center hover:border-l-2  px-4' href="/">Student Login</a>
 
             </div>
 
