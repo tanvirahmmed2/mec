@@ -19,7 +19,7 @@ const Landing = () => {
   }, [])
 
   return (
-    <section className='w-full  relative overflow-hidden'>
+    <section className='w-full h-auto relative overflow-hidden'>
       {images.map((img, index) => (
         <img
           key={index}
