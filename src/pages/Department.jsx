@@ -16,6 +16,7 @@ const Department = () => {
 
       <DeptFaculty title={department.title} />
 
+      <p>{department.lab_details}</p>
       <div className="w-full flex flex-col items-start justify-center gap-6 lg:flex-row">
         
         <div className="w-full flex flex-col items-start lg:items-end justify-start gap-2 p-4">
