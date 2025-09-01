@@ -24,7 +24,7 @@ const Landing = () => {
       <img
         src={images[currentIndex]}
         alt={`slide-${currentIndex}`}
-        className="w-full h-auto object-cover transition-opacity duration-1000"
+        className="w-full h-auto transition-opacity duration-1000"
       />
     </section>
   );
