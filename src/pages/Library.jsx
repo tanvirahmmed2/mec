@@ -1,49 +1,75 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
 import { CreateContext } from '../context/CreateContext';
 
 const Library = () => {
-  const { hoset_lib } = useContext(CreateContext)
+  const { hoset_lib } = useContext(CreateContext);
   const library = hoset_lib.filter((item) => item.category === "library")[0];
 
+  if (!library) return <p className="text-center text-red-500 mt-10">No library data available.</p>;
+
   return (
-    <section className='w-full flex flex-col items-center gap-4 justify-center text-center'>
-      <h1 className="text-3xl font-semibold text-center">{library.name}</h1>
-      <img src={library.image} alt="" className='w-full lg:w-2/3 rounded-lg' />
-      <p>{library.description}</p>
+    <section className='w-full flex flex-col items-center justify-center gap-8 p-6 bg-gray-50'>
+      
+      {/* Library Name */}
+      <h1 className="text-4xl font-bold text-center text-gray-800">{library.name}</h1>
 
-      <div className='w-full lg:w-2/3 flex flex-col lg:flex-row items-start justify-around text-start'>
+      {/* Library Image */}
+      {library.image && (
+        <img 
+          src={library.image} 
+          alt={library.name} 
+          className='w-full lg:w-2/3 rounded-lg shadow-lg border border-gray-200 mt-4'
+        />
+      )}
 
-        <div className='w-full flex flex-col items-start justify-start gap-2'>
-          <h1 className="text-2xl font-semibold text-center">Facilities:</h1>
-          {
-            library.facilities.map((facility) => {
-              return <p key={facility.i}>{facility}</p>
-            })
-          }
-        </div>
+      {/* Description */}
+      <p className='max-w-4xl text-gray-700 text-lg mt-4 text-justify'>{library.description}</p>
 
-        <div className='w-full flex flex-col items-start justify-start gap-2'>
-          <h1 className="text-2xl font-semibold text-center">Services:</h1>
-          {
-            library.services.map((service) => {
-              return <p key={service.i}>{service}</p>
-            })
-          }
-        </div>
+      {/* Facilities & Services */}
+      <div className='w-full lg:w-4/5 flex flex-col lg:flex-row gap-8 mt-6'>
+        
+        {/* Facilities */}
+        {library.facilities && (
+          <div className='flex-1 bg-white p-4 rounded-lg shadow-md border border-gray-200'>
+            <h2 className='text-2xl font-semibold text-gray-800 mb-4 text-center'>Facilities</h2>
+            <ul className='list-disc list-inside space-y-1 text-gray-700'>
+              {library.facilities.map((facility, index) => (
+                <li key={index}>{facility}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Services */}
+        {library.services && (
+          <div className='flex-1 bg-white p-4 rounded-lg shadow-md border border-gray-200'>
+            <h2 className='text-2xl font-semibold text-gray-800 mb-4 text-center'>Services</h2>
+            <ul className='list-disc list-inside space-y-1 text-gray-700'>
+              {library.services.map((service, index) => (
+                <li key={index}>{service}</li>
+              ))}
+            </ul>
+          </div>
+        )}
 
       </div>
 
-      <div className='mt-2 flex flex-col items-start gap-2'>
-        <p >Student capacity : {library.capacity}</p>
-        <h2 className='font-semibold'>Opening Hours:</h2>
-        <p><strong>Weekdays:</strong> {library.opening_hours.weekdays}</p>
-        <p><strong>Weekends:</strong> {library.opening_hours.weekends}</p>
+      {/* Additional Info */}
+      <div className='w-full lg:w-2/3 bg-white p-6 rounded-lg shadow-md border border-gray-200 mt-6 text-gray-700'>
+        <p><span className='font-semibold'>Student Capacity:</span> {library.capacity}</p>
+        <div className='mt-2'>
+          <h3 className='font-semibold'>Opening Hours:</h3>
+          <p><span className='font-medium'>Weekdays:</span> {library.opening_hours.weekdays}</p>
+          <p><span className='font-medium'>Weekends:</span> {library.opening_hours.weekends}</p>
+        </div>
+        <p className='mt-2'><span className='font-semibold text-red-600'>Location:</span> {library.location}</p>
+        {library.staff && (
+          <p className='mt-2'><span className='font-semibold'>Staff:</span> {library.staff.join(', ')}</p>
+        )}
       </div>
-      <p className='text-red-800'>Location: {library.location}</p>
-
 
     </section>
-  )
-}
+  );
+};
 
-export default Library
+export default Library;
