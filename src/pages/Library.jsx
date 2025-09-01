@@ -11,7 +11,7 @@ const Library = () => {
       <img src={library.image} alt="" className='w-full lg:w-2/3 rounded-lg' />
       <p>{library.description}</p>
 
-      <div className='w-full lg:w-2/3 flex flex-col lg:flex-row items-start justify-around'>
+      <div className='w-full lg:w-2/3 flex flex-col lg:flex-row items-start justify-around text-start'>
 
         <div className='w-full flex flex-col items-start justify-start gap-2'>
           <h1 className="text-2xl font-semibold text-center">Facilities:</h1>
