@@ -11,8 +11,8 @@ const Faculty = () => {
       {
         faculty.map((faculty)=>{
           const { id, name, designation, image , department} = faculty
-          return <div key={id} className='w-[300px]  h-auto flex flex-col gap-2 p-2 border-2 rounded-lg hover:shadow-lg'>
-            <img src={image} alt=""  className='w-[300px]'/>
+          return <div key={id} className='w-2/3 sm:w-[300px]  h-auto flex flex-col gap-2 p-2 border-2 rounded-lg hover:shadow-lg'>
+            <img src={image} alt=""  className='w-full sm:w-[300px]'/>
             <Link className='font-semibold text-lg' to={`/faculty/${name }`}>{name}</Link>
             <p className='italic'>{designation}</p>
             <p>{department}</p>

@@ -34,7 +34,7 @@ const FacultyProfile = () => {
         <section className='w-full h-auto flex flex-col items-center justify-center gap-6 text-center'>
             <div className='w-full flex flex-col lg:flex-row items-center justify-center gap-2'>
                 <div className='w-full flex flex-col items-center justify-center gap-2'>
-                    <img src={image} alt="" className='w-[350px] rounded-lg' />
+                    <img src={image} alt="" className='w-2/3 sm:w-[350px] rounded-lg' />
                     <h1 className='text-2xl font-semibold'>{facultyName}</h1>
                     <p>{designation}</p>
                     <p>{department}</p>
