@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import about_img from "../images/about.jpg"
 import { Link } from 'react-router-dom';
 import { PiChalkboardTeacher, PiStudentFill } from "react-icons/pi";
 import { PiStudent } from "react-icons/pi";
@@ -23,8 +24,8 @@ const About = () => {
                         <Link to="/cse">3. Computer Science and Engineering (CSE)</Link>
                     </div>
                 </div>
-                <div className='w-full'>
-
+                <div className='w-full rounded-lg overflow-hidden'>
+                    <img src={about_img} alt="" />
                 </div>
             </div>
 
