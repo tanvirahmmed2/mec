@@ -29,7 +29,7 @@ const Contact = () => {
         </div>
 
 
-        <div className='w-full h-auto flex flex-col items-center justify-center border-2 bg-red-800 bg-opacity-15 rounded-lg py-4'>
+        <div className='w-full h-auto flex flex-col items-center justify-center border-2 bg-sky-800 bg-opacity-15 rounded-lg py-4'>
           <h1 className='text-xl font-semibold'>Mail</h1>
           <form action="" className='w-full h-auto flex flex-col items-center justify-center'>
             <div className='w-full flex flex-col  gap-2 p-2'>
