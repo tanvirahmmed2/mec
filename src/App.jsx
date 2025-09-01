@@ -16,6 +16,7 @@ import Staff from "./pages/Staff";
 import Officer from "./pages/Officer";
 import Curriculam from "./pages/Curriculam";
 import Gallery from "./pages/Gallery";
+import Hostel from "./pages/Hostel";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
           <Route path="/officers" element={<Officer /> } />
           <Route path="/curriculam" element={<Curriculam/> } />
           <Route path="/gallery" element={<Gallery/> } />
+          <Route path="/hostel" element={<Hostel/> } />
 
           <Route path="/*" element={<Error />} />
         </Routes>

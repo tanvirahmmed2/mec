@@ -100,6 +100,8 @@ const Navbar = () => {
                     <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 text-white' to="/notices">Notices</Link>
                     <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 text-white' to="/contacts">Contacts</Link>
                     <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 text-white' to="/gallery">Gallery</Link>
+                    <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 text-white' to="/hostel">Hostel</Link>
+
                 </div>
 
 
@@ -145,7 +147,8 @@ const Navbar = () => {
                 <a className='w-auto flex items-center hover:border-l-2 px-4' href="/alumni">Alumni</a>
                 <a className='w-auto flex items-center hover:border-l-2 px-4' href="/notices">Notice</a>
                 <a className='w-auto flex items-center hover:border-l-2 px-4' href="/gallery">Gallery</a>
-                <a className='w-auto flex items-center hover:border-l-2 px-4' href="/contacts">Contacts</a>
+                <a className='w-auto flex items-center hover:border-l-2 px-4' href="/gallery">Gallery</a>
+                <a className='w-auto flex items-center hover:border-l-2 px-4' href="/hostel">Hostel</a>
                 <a className='w-auto flex items-center hover:border-l-2  px-4' href="/student-account">Student Login</a>
 
             </div>
