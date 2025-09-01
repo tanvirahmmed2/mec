@@ -10,7 +10,7 @@ const Footer = () => {
     setYear(new Date().getFullYear())
   }, [])
   return (
-    <div className='w-full h-auto bg-gray-50 flex flex-col items-center justify-center gap-10 pt-8'>
+    <div className='w-full h-auto bg-red-50 flex flex-col items-center justify-center gap-10 pt-8'>
       <div className='w-full h-auto flex flex-col lg:flex-row items-center justify-center gap-10'>
         <div className='w-auto flex flex-col gap-1 lg:text-lg text-base lg:items-start text-center items-center justify-center'>
           <h1>Follow our official social media</h1>
