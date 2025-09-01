@@ -1,93 +1,106 @@
+import blank_image from '../images/blank_image.jpeg'
+
 const officersData= [
   {
     "id": 1,
-    "name": "Dr. Ayesha Rahman",
-    "designation": "Principal",
+    "name": "Md. Abdul Karim",
+    image: blank_image,
+    "designation": "Registrar",
     "department": "Administration",
-    "email": "ayesha.rahman@institution.edu",
-    "phone": "+8801710000001",
-    "office": "Main Building - Room 101"
+    "email": "registrar@university.edu",
+    "phone": "+8801711000001",
+    "office": "Admin Building - Room 101"
   },
   {
     "id": 2,
-    "name": "Prof. Md. Karim Hossain",
-    "designation": "Vice Principal",
+    "name": "Farzana Akter",
+    image: blank_image,
+    "designation": "Deputy Registrar",
     "department": "Administration",
-    "email": "karim.hossain@institution.edu",
-    "phone": "+8801710000002",
-    "office": "Main Building - Room 102"
+    "email": "farzana.akter@university.edu",
+    "phone": "+8801711000002",
+    "office": "Admin Building - Room 102"
   },
   {
     "id": 3,
-    "name": "Engr. Tanvir Alam",
-    "designation": "Head of Department",
-    "department": "Electrical Engineering",
-    "email": "tanvir.alam@institution.edu",
-    "phone": "+8801710000003",
-    "office": "EE Block - Room 201"
+    "name": "Shahadat Hossain",
+    image: blank_image,
+    "designation": "Chief Accountant",
+    "department": "Finance",
+    "email": "shahadat.hossain@university.edu",
+    "phone": "+8801711000003",
+    "office": "Finance Office - Room 201"
   },
   {
     "id": 4,
-    "name": "Dr. Farhana Akter",
-    "designation": "Associate Professor",
-    "department": "Computer Science",
-    "email": "farhana.akter@institution.edu",
-    "phone": "+8801710000004",
-    "office": "CS Block - Room 301"
+    "name": "Nazmul Islam",
+    image: blank_image,
+    "designation": "IT Officer",
+    "department": "Information Technology",
+    "email": "nazmul.islam@university.edu",
+    "phone": "+8801711000004",
+    "office": "IT Center - Room 301"
   },
   {
     "id": 5,
-    "name": "Md. Imran Hossain",
-    "designation": "Assistant Professor",
-    "department": "Mechanical Engineering",
-    "email": "imran.hossain@institution.edu",
-    "phone": "+8801710000005",
-    "office": "ME Block - Room 202"
+    "name": "Sultana Jahan",
+    image: blank_image,
+    "designation": "Librarian",
+    "department": "Library",
+    "email": "sultana.jahan@university.edu",
+    "phone": "+8801711000005",
+    "office": "Central Library - Room 401"
   },
   {
     "id": 6,
-    "name": "Dr. Nusrat Jahan",
-    "designation": "Senior Lecturer",
-    "department": "Civil Engineering",
-    "email": "nusrat.jahan@institution.edu",
-    "phone": "+8801710000006",
-    "office": "CE Block - Room 203"
+    "name": "Rafiq Uddin",
+    image: blank_image,
+    "designation": "Maintenance Supervisor",
+    "department": "Maintenance",
+    "email": "rafiq.uddin@university.edu",
+    "phone": "+8801711000006",
+    "office": "Maintenance Block - Room 601"
   },
   {
     "id": 7,
-    "name": "Engr. Mahmudul Hasan",
-    "designation": "Lecturer",
-    "department": "Electronics",
-    "email": "mahmudul.hasan@institution.edu",
-    "phone": "+8801710000007",
-    "office": "ECE Block - Room 204"
+    "name": "Mahfuz Ahmed",
+    image: blank_image,
+    "designation": "Transport Officer",
+    "department": "Transport",
+    "email": "mahfuz.ahmed@university.edu",
+    "phone": "+8801711000007",
+    "office": "Transport Office - Room 701"
   },
   {
     "id": 8,
-    "name": "Dr. Shamsun Nahar",
-    "designation": "Research Coordinator",
-    "department": "Research & Development",
-    "email": "shamsun.nahar@institution.edu",
-    "phone": "+8801710000008",
-    "office": "R&D Center - Room 401"
+    "name": "Selina Begum",
+    image: blank_image,
+    "designation": "Medical Assistant",
+    "department": "Medical Center",
+    "email": "selina.begum@university.edu",
+    "phone": "+8801711000008",
+    "office": "Medical Center - Room 801"
   },
   {
     "id": 9,
-    "name": "Md. Abdullah Al Mamun",
-    "designation": "Registrar",
-    "department": "Administration",
-    "email": "abdullah.mamun@institution.edu",
-    "phone": "+8801710000009",
-    "office": "Main Building - Room 103"
+    "name": "Kamrul Hasan",
+    image: blank_image,
+    "designation": "Security Supervisor",
+    "department": "Security",
+    "email": "kamrul.hasan@university.edu",
+    "phone": "+8801711000009",
+    "office": "Security Office - Gate 1"
   },
   {
     "id": 10,
-    "name": "Sadia Afrin",
-    "designation": "Librarian",
-    "department": "Library",
-    "email": "sadia.afrin@institution.edu",
-    "phone": "+8801710000010",
-    "office": "Library Block - Room 501"
+    "name": "Jashim Uddin",
+    image: blank_image,
+    "designation": "Office Clerk",
+    "department": "Administration",
+    "email": "jashim.uddin@university.edu",
+    "phone": "+8801711000010",
+    "office": "Admin Building - Room 103"
   }
 ]
+
 export default officersData

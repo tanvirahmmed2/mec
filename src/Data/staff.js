@@ -1,7 +1,10 @@
+import blank_image from '../images/blank_image.jpeg'
+
 const staffData= [
   {
     "id": 1,
     "name": "Abdul Malek",
+    image: blank_image,
     "designation": "Cleaner",
     "department": "Maintenance",
     "email": "abdul.malek@university.edu",
@@ -11,6 +14,7 @@ const staffData= [
   {
     "id": 2,
     "name": "Jahanara Begum",
+    image: blank_image,
     "designation": "Cleaner",
     "department": "Hostel Services",
     "email": "jahanara.begum@university.edu",
@@ -20,6 +24,7 @@ const staffData= [
   {
     "id": 3,
     "name": "Rashid Mia",
+    image: blank_image,
     "designation": "Security Guard",
     "department": "Security",
     "email": "rashid.mia@university.edu",
@@ -29,6 +34,7 @@ const staffData= [
   {
     "id": 4,
     "name": "Nurul Islam",
+    image: blank_image,
     "designation": "Security Guard",
     "department": "Security",
     "email": "nurul.islam@university.edu",
@@ -38,6 +44,7 @@ const staffData= [
   {
     "id": 5,
     "name": "Shafiqul Alam",
+    image: blank_image,
     "designation": "Gardener",
     "department": "Campus Maintenance",
     "email": "shafiqul.alam@university.edu",
@@ -47,6 +54,7 @@ const staffData= [
   {
     "id": 6,
     "name": "Hamida Khatun",
+    image: blank_image,
     "designation": "Cafeteria Worker",
     "department": "Cafeteria",
     "email": "hamida.khatun@university.edu",
@@ -56,6 +64,7 @@ const staffData= [
   {
     "id": 7,
     "name": "Mizanur Rahman",
+    image: blank_image,
     "designation": "Office Assistant",
     "department": "Administration",
     "email": "mizanur.rahman@university.edu",
@@ -65,6 +74,7 @@ const staffData= [
   {
     "id": 8,
     "name": "Salma Akter",
+    image: blank_image,
     "designation": "Janitor",
     "department": "Classroom Services",
     "email": "salma.akter@university.edu",
@@ -74,6 +84,7 @@ const staffData= [
   {
     "id": 9,
     "name": "Babul Sheikh",
+    image: blank_image,
     "designation": "Driver",
     "department": "Transport",
     "email": "babul.sheikh@university.edu",
@@ -83,6 +94,7 @@ const staffData= [
   {
     "id": 10,
     "name": "Rokeya Begum",
+    image: blank_image,
     "designation": "Cook",
     "department": "Cafeteria",
     "email": "rokeya.begum@university.edu",
