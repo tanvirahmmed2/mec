@@ -18,7 +18,7 @@ const Hostel = () => {
               <p className='italic opacity-40'>{name}</p>
               <p className='font-semibold text-lg'> For {capacity} {type} students</p>
               <p>{description}</p>
-              <span className='w-2/3 h-1 bg-red-800 rounded-xl'></span>
+              <span className='w-2/3 h-1 bg-red-800 rounded-xl opacity-10'></span>
             </div>
 
 
