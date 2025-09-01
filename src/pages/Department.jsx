@@ -11,7 +11,6 @@ const Department = () => {
   return (
     <section className="w-full flex flex-col items-center justify-center gap-8 p-6 bg-gray-50">
 
-      {/* Department Banner */}
       {department.banner && (
         <img
           src={department.banner}
@@ -20,24 +19,18 @@ const Department = () => {
         />
       )}
 
-      {/* Department Name */}
       <h1 className="text-4xl font-bold text-center text-gray-800 mt-4">{department.name}</h1>
 
-      {/* Long Details */}
       <p className="max-w-4xl text-gray-700 text-justify mt-4">{department.long_details}</p>
 
-      {/* Faculty Section */}
       <DeptFaculty title={department.title} />
 
-      {/* Lab Details */}
       {department.lab_details && (
         <p className="max-w-4xl text-gray-700 text-justify mt-4">{department.lab_details}</p>
       )}
 
-      {/* Clubs and Lab Facilities */}
       <div className="w-full flex flex-col lg:flex-row gap-8 mt-6">
 
-        {/* Clubs */}
         {department.clubs && (
           <div className="flex-1 bg-white p-6 rounded-lg shadow-md border border-gray-200">
             <h2 className="text-2xl font-semibold text-center mb-4">Clubs</h2>
@@ -49,7 +42,6 @@ const Department = () => {
           </div>
         )}
 
-        {/* Lab Facilities */}
         {department.lab_facilities && (
           <div className="flex-1 bg-white p-6 rounded-lg shadow-md border border-gray-200">
             <h2 className="text-2xl font-semibold text-center mb-4">Lab Facilities</h2>

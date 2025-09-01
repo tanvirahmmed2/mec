@@ -10,10 +10,8 @@ const Library = () => {
   return (
     <section className='w-full flex flex-col items-center justify-center gap-8 p-6 bg-gray-50'>
       
-      {/* Library Name */}
       <h1 className="text-4xl font-bold text-center text-gray-800">{library.name}</h1>
 
-      {/* Library Image */}
       {library.image && (
         <img 
           src={library.image} 
@@ -22,13 +20,10 @@ const Library = () => {
         />
       )}
 
-      {/* Description */}
       <p className='max-w-4xl text-gray-700 text-lg mt-4 text-justify'>{library.description}</p>
 
-      {/* Facilities & Services */}
       <div className='w-full lg:w-4/5 flex flex-col lg:flex-row gap-8 mt-6'>
         
-        {/* Facilities */}
         {library.facilities && (
           <div className='flex-1 bg-white p-4 rounded-lg shadow-md border border-gray-200'>
             <h2 className='text-2xl font-semibold text-gray-800 mb-4 text-center'>Facilities</h2>
@@ -40,7 +35,6 @@ const Library = () => {
           </div>
         )}
 
-        {/* Services */}
         {library.services && (
           <div className='flex-1 bg-white p-4 rounded-lg shadow-md border border-gray-200'>
             <h2 className='text-2xl font-semibold text-gray-800 mb-4 text-center'>Services</h2>
@@ -54,7 +48,6 @@ const Library = () => {
 
       </div>
 
-      {/* Additional Info */}
       <div className='w-full lg:w-2/3 bg-white p-6 rounded-lg shadow-md border border-gray-200 mt-6 text-gray-700'>
         <p><span className='font-semibold'>Student Capacity:</span> {library.capacity}</p>
         <div className='mt-2'>
