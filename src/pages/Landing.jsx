@@ -25,7 +25,7 @@ const Landing = () => {
           key={index}
           src={img}
           alt={`slide-${index}`}
-          className={`absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+          className={`absolute w-full h-auto object-cover transition-opacity duration-1000 ease-in-out ${
             index === currentIndex ? 'opacity-100' : 'opacity-0'
           }`}
         />
