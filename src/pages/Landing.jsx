@@ -2,9 +2,9 @@ import React from 'react'
 
 const Landing = () => {
   return (
-    <div>
-      
-    </div>
+    <section className='w-full'>
+
+    </section>
   )
 }
 

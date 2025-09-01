@@ -44,7 +44,7 @@ const Navbar = () => {
 
                     <div className=' w-auto h-12 flex flex-row items-center justify-cneter gap-2'>
                         <Link className='w-auto h-12 hidden sm:flex  items-center hover:border-b-2 px-4 ' to="/">Home</Link>
-                        <Link className='w-auto h-12 hidden md:flex  items-center hover:border-b-2 px-4 ' to="/">Student apply</Link>
+                        <Link className='w-auto h-12 hidden md:flex  items-center hover:border-b-2 px-4 ' to="/">Login</Link>
                         <Link className='w-auto h-12 hidden lg:flex  items-center hover:border-b-2 px-4 ' to="/">Alumni</Link>
                         <p className='w-auto h-12 flex lg:hidden items-center hover:border-b-2 px-4 cursor-pointer ' onClick={handlemenu}><GiHamburgerMenu /></p>
                     </div>
@@ -115,43 +115,43 @@ const Navbar = () => {
 
             <div className={`w-[250px]  lg:hidden absolute top-20 z-50 right-0 bg-red-50  p-4 gap-4 h-auto items-start justify-start flex-col ${menu ? "flex" : "hidden"}`}>
 
-                <a className='w-auto flex items-center hover:border-l-2 px-4' href="/">Home</a>
-                <a className='w-auhref flex items-center hover:border-l-2 px-4' href="/about">About</a>
+                <Link onClick={()=>{setMenu(!menu)}}  className='w-auto flex items-center hover:border-l-2 px-4' to="/">Home</Link>
+                <Link onClick={()=>{setMenu(!menu)}}  className='w-auhref flex items-center hover:border-l-2 px-4' to="/about">About</Link>
                 <div className='w-auto relative group'>
                     <p className='w-auto  flex items-center hover:border-l-2 px-4 gap-2 cursor-pointer ' onClick={handledept}>Department <IoIosArrowDown /></p>
                     <div className={`w-[300px] rounded-md gap-2 right-[150px] top-0  p-2 flex-col items-start    ${department?"flex": "hidden"}`}>
-                        <a className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' href="/department">Department</a>
-                        <a className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' href="/ce">Department of CE</a>
-                        <a className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' href="/eee">Department of EEE</a>
-                        <a className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' href="/cse">Department of CSE</a>
-                        <a className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' href="/gs">Department of GS (Non-tech)</a>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="/department">Department</Link>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="/ce">Department of CE</Link>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="/eee">Department of EEE</Link>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="/cse">Department of CSE</Link>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="/gs">Department of GS (Non-tech)</Link>
                     </div>
                 </div>
                 <div className='w-auto  relative group'>
                     <p className='w-auto  flex items-center hover:border-l-2  px-4 gap-2 cursor-pointer ' onClick={handleadmin} >Administration <IoIosArrowDown /></p>
                     <div className={`w-auto rounded-md gap-2  right-[175px] top-0 ${administration?"flex": "hidden"} p-2 flex-col items-start  `}>
-                        <a className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' href="/administration">Administration</a>
-                        <a className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' href="/faculty">Faculty</a>
-                        <a className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' href="/officers">Officers</a>
-                        <a className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' href="/staff">Staff</a>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="/administration">Administration</Link>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="/faculty">Faculty</Link>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="/officers">Officers</Link>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="/staff">Staff</Link>
                     </div>
                 </div>
                 <div className='w-auto relative group'>
                     <p className='w-auto  flex items-center hover:border-l-2 px-4 gap-2 cursor-pointer ' onClick={handleacademics}>Academics <IoIosArrowDown /></p>
                     <div className={`w-auto rounded-md gap-2 right-[145px] top-0 ${academics?"flex": "hidden"} p-2 flex-col items-start  `}>
-                        <a className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' href="curriculam">Curriculam</a>
-                        <a className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' href="https://cmc.du.ac.bd/result.php">Result</a>
-                        <a className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' href="https://collegeadmission.eis.du.ac.bd/en">Admission</a>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="curriculam">Curriculam</Link>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="https://cmc.du.ac.bd/result.php">Result</Link>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="https://collegeadmission.eis.du.ac.bd/en">Admission</Link>
                     </div>
                 </div>
-                <a className='w-auto flex items-center hover:border-l-2 px-4' href="/clubs">Clubs</a>
-                <a className='w-auto flex items-center hover:border-l-2 px-4' href="/">Alumni</a>
-                <a className='w-auto flex items-center hover:border-l-2 px-4' href="/notices">Notice</a>
-                <a className='w-auto flex items-center hover:border-l-2 px-4' href="/gallery">Gallery</a>
-                <a className='w-auto flex items-center hover:border-l-2 px-4' href="/gallery">Gallery</a>
-                <a className='w-auto flex items-center hover:border-l-2 px-4' href="/hostel">Hostel</a>
-                <a className='w-auto flex items-center hover:border-l-2 px-4' href="/library">Library</a>
-                <a className='w-auto flex items-center hover:border-l-2  px-4' href="/">Student Login</a>
+                <Link onClick={()=>{setMenu(!menu)}}  className='w-auto flex items-center hover:border-l-2 px-4' to="/clubs">Clubs</Link>
+                <Link onClick={()=>{setMenu(!menu)}}  className='w-auto flex items-center hover:border-l-2 px-4' to="/">Alumni</Link>
+                <Link onClick={()=>{setMenu(!menu)}}  className='w-auto flex items-center hover:border-l-2 px-4' to="/notices">Notice</Link>
+                <Link onClick={()=>{setMenu(!menu)}}  className='w-auto flex items-center hover:border-l-2 px-4' to="/gallery">Gallery</Link>
+                <Link onClick={()=>{setMenu(!menu)}}  className='w-auto flex items-center hover:border-l-2 px-4' to="/gallery">Gallery</Link>
+                <Link onClick={()=>{setMenu(!menu)}}  className='w-auto flex items-center hover:border-l-2 px-4' to="/hostel">Hostel</Link>
+                <Link onClick={()=>{setMenu(!menu)}}  className='w-auto flex items-center hover:border-l-2 px-4' to="/library">Library</Link>
+                <Link onClick={()=>{setMenu(!menu)}} className='w-auto flex items-center hover:border-l-2  px-4' to="/">Login</Link>
 
             </div>
 
