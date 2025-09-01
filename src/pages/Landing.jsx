@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import shaheed_minar from '../images/slider/shaheed-minar.jpg'
-import field from '../images/slider/field.jpg'
-import field_2 from '../images/slider/field_2.jpg'
-import mukti_hall from '../images/slider/mukti_hall.jpg'
-import amar_hall from '../images/slider/amar_hall.jpg'
-import ce_building from '../images/slider/ce_building.jpg'
-
-const images = [shaheed_minar, field, field_2, mukti_hall, amar_hall, ce_building]
+const images = [
+  '/slider/shaheed-minar.jpg',
+  '/slider/field.jpg',
+  '/slider/field_2.jpg',
+  '/slider/mukti_hall.jpg',
+  '/slider/amar_hall.jpg',
+  '/slider/ce_building.jpg'
+]
 
 const Landing = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
