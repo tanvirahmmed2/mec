@@ -11,7 +11,7 @@ const hostel_library = [
     category: "hall",
     image: amar_hall,
     description:
-      "This hall is exclusively for male students and offers housing facilities for 200 residents. It provides a supportive academic and social environment with essential amenities for daily student life.",
+      "Dedicated to male students, this hall accommodates 200 residents. It ensures a safe and organized living space where students can focus on their studies while engaging in community activities.",
   },
   {
     name: "Muktijoddha Hall",
