@@ -19,13 +19,13 @@ const Landing = () => {
   }, [])
 
   return (
-    <section className='w-full h-auto relative overflow-hidden'>
+    <section className='w-full h-full relative overflow-hidden'>
       {images.map((img, index) => (
         <img
           key={index}
           src={img}
           alt={`slide-${index}`}
-          className={`absolute w-full h-auto object-cover transition-opacity duration-1000 ease-in-out ${
+          className={`absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
             index === currentIndex ? 'opacity-100' : 'opacity-0'
           }`}
         />
