@@ -1,5 +1,6 @@
 import mukti_hall from "../images/muktijoddha_hall.jpg";
 import amar_hall from "../images/amarekushey_hall.jpg";
+import taramon_hall from "../images/taramonbibi_hall.jpg";
 import library_image from "../images/library.jpg";
 
 const hostel_library = [
@@ -26,7 +27,7 @@ const hostel_library = [
     type: "Female",
     capacity: 150,
     category: "hall",
-    image: null,
+    image: taramon_hall,
     description:
       "Reserved for female students, this hall provides accommodation for 150 residents. It is designed with security and comfort in mind, ensuring a safe and welcoming environment.",
   },
