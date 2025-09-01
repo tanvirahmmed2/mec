@@ -17,6 +17,7 @@ import Officer from "./pages/Officer";
 import Curriculam from "./pages/Curriculam";
 import Gallery from "./pages/Gallery";
 import Hostel from "./pages/Hostel";
+import Library from "./pages/Library";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
           <Route path="/curriculam" element={<Curriculam/> } />
           <Route path="/gallery" element={<Gallery/> } />
           <Route path="/hostel" element={<Hostel/> } />
+          <Route path="/library" element={<Library/> } />
 
           <Route path="/*" element={<Error />} />
         </Routes>
