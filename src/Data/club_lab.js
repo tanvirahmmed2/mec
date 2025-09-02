@@ -1,7 +1,8 @@
-const club_lab = [
+export const club_lab = [
   {
     "id": 1,
     "name": "Alpha Science Lab (ASL)",
+    "title": "asl",
     "category": "Lab",
     "description": "Alpha Science Lab (ASL) is a student-driven scientific research lab based at Mymensingh Engineering College. The lab serves as a hub for innovation, practical learning, and technology development, where students explore mechatronics, robotics, embedded systems, VLSI technology, and IT-enabled scientific solutions.",
     "mission": [
@@ -24,6 +25,7 @@ const club_lab = [
   {
     "id": 2,
     "name": "Mechatronics & Embedded System Lab (MESL)",
+    "title": "mesl",
     "category": "Lab",
     "description": "MESL is a specialized lab at MEC focusing on mechatronics, embedded systems, and robotics.",
     "mission": [
@@ -39,6 +41,7 @@ const club_lab = [
   {
     "id": 3,
     "name": "MEC Research Community",
+    "title": "mecrc",
     "category": "Lab",
     "description": "MEC Research Community is a student-led initiative at Mymensingh Engineering College (MEC), dedicated to fostering a culture of research, innovation, and collaboration. The community bridges the gap between theoretical knowledge and practical application, empowering students to undertake meaningful research projects across various engineering disciplines.",
     "mission": [
@@ -58,6 +61,7 @@ const club_lab = [
   {
     "id": 4,
     "name": "MEC Computer Club",
+    "title": "meccc",
     "category": "Club",
     "description": "The MEC Computer Club is a student-led technology community at Mymensingh Engineering College (MEC), dedicated to fostering programming skills, problem-solving abilities, and innovation among students. It provides a platform for learners and enthusiasts to explore coding, algorithms, and computer science projects in a collaborative environment.",
     "mission": [
@@ -75,6 +79,7 @@ const club_lab = [
   {
     "id": 5,
     "name": "Mymensingh Engineering College Debating Society (MECDS)",
+    "title": "mecds",
     "category": "Club",
     "description": "The MEC Debating Society (MECDS) is a student-led organization at Mymensingh Engineering College (MEC), dedicated to fostering critical thinking, public speaking, and intellectual discourse among students. MECDS provides a platform for learners to engage in debates, discussions, and competitions, promoting a culture of analytical thinking and effective communication.",
     "mission": [
@@ -92,6 +97,7 @@ const club_lab = [
   {
     "id": 6,
     "name": "Mymensingh Engineering College Film & Photographic Society (MECFPS)",
+    "title": "mecfps",
     "category": "Club",
     "description": "The MEC Film & Photographic Society (MECFPS) is a student-led organization at Mymensingh Engineering College (MEC), dedicated to fostering creativity, visual storytelling, and technical skills in film and photography. The society provides a platform for students to explore photography, videography, and editing, collaborate on projects, and showcase their work to the wider community.",
     "mission": [
@@ -110,4 +116,3 @@ const club_lab = [
   }
 ];
 
-export default club_lab

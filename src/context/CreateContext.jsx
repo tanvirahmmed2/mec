@@ -4,6 +4,7 @@ import deptDatas from "../Data/department"
 import staffData from "../Data/staff";
 import officersData from "../Data/officers";
 import hostel_library from "../Data/hostel_library";
+import { club_lab } from "../Data/club_lab";
 
 export const CreateContext = createContext(null);
 
@@ -20,6 +21,7 @@ const CreateContextProvider = (props) => {
     const [staff,setStaff] =useState(staffData)
     const [officer,setofficer] =useState(officersData)
     const [hoset_lib,setHostel_Lib] =useState(hostel_library)
+    const [Club_Lab,setClub_lab] =useState(club_lab)
   
 
   const contextValue = {
@@ -30,6 +32,7 @@ const CreateContextProvider = (props) => {
     staff,setStaff,
     officer,setofficer,
     hoset_lib,setHostel_Lib,
+    Club_Lab,setClub_lab,
   };
 
   return (

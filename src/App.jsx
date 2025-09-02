@@ -18,6 +18,8 @@ import Curriculam from "./pages/Curriculam";
 import Gallery from "./pages/Gallery";
 import Hostel from "./pages/Hostel";
 import Library from "./pages/Library";
+import Clubs from "./pages/Clubs";
+import Club from "./pages/Club";
 
 const App = () => {
   return (
@@ -40,6 +42,9 @@ const App = () => {
           <Route path="/gallery" element={<Gallery/> } />
           <Route path="/hostel" element={<Hostel/> } />
           <Route path="/library" element={<Library/> } />
+          <Route path="/clubs" element={<Clubs/> } />
+          <Route path="/clubs/:title" element={<Club/> } />
+          
 
           <Route path="/*" element={<Error />} />
         </Routes>
