@@ -1,7 +1,4 @@
-import mukti_hall from "../images/muktijoddha_hall.jpg";
-import amar_hall from "../images/amarekushey_hall.jpg";
-import taramon_hall from "../images/taramonbibi_hall.jpg";
-import library_image from "../images/library.jpg";
+
 
 const hostel_library = [
   {
@@ -9,7 +6,7 @@ const hostel_library = [
     type: "Male",
     capacity: 200,
     category: "hall",
-    image: amar_hall,
+    image: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756787438/amarekushey_hall_mltrmd.jpg",
     description:
       "Dedicated to male students, this hall accommodates 200 residents. It ensures a safe and organized living space where students can focus on their studies while engaging in community activities.",
   },
@@ -18,7 +15,7 @@ const hostel_library = [
     type: "Male",
     capacity: 200,
     category: "hall",
-    image: mukti_hall,
+    image: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756787439/muktijoddha_hall_affzkw.jpg",
     description:
       "Dedicated to male students, this hall accommodates 200 residents. It ensures a safe and organized living space where students can focus on their studies while engaging in community activities.",
   },
@@ -27,7 +24,7 @@ const hostel_library = [
     type: "Female",
     capacity: 150,
     category: "hall",
-    image: taramon_hall,
+    image: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756787441/taramonbibi_hall_n77qid.jpg",
     description:
       "Reserved for female students, this hall provides accommodation for 150 residents. It is designed with security and comfort in mind, ensuring a safe and welcoming environment.",
   },
@@ -36,7 +33,7 @@ const hostel_library = [
     type: "Library",
     capacity: 80,
     category: "library",
-    image: library_image,
+    image: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756787439/library_mpvbmi.jpg",
     description:
       "The modern central library is equipped with internet facilities and a rich collection of necessary books. Each room can accommodate approximately 80 students for study. Students can issue books for home use as per their requirements.",
     facilities: [

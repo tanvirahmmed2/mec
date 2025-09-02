@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
 const images = [
-  '/slider/field.jpg',
-  '/slider/field_2.jpg',
-  '/slider/mukti_hall.jpg',
-  '/slider/amar_hall.jpg',
-  '/slider/ce_building.jpg'
+  'https://res.cloudinary.com/dz45x9efk/image/upload/v1756787564/field_np54gi.jpg',
+  'https://res.cloudinary.com/dz45x9efk/image/upload/v1756787945/shaheed_minar_yyqrpi.jpg',
+  'https://res.cloudinary.com/dz45x9efk/image/upload/v1756787565/field_2_ek6sol.jpg',
+  'https://res.cloudinary.com/dz45x9efk/image/upload/v1756787565/mukti_hall_ojvhar.jpg',
+  'https://res.cloudinary.com/dz45x9efk/image/upload/v1756787564/amar_hall_hk0xx2.jpg',
+  'https://res.cloudinary.com/dz45x9efk/image/upload/v1756787563/ce_building_utdqva.jpg'
 ];
 
 const Landing = () => {
