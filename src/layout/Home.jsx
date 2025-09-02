@@ -5,6 +5,7 @@ import Contact from '../pages/Contact'
 import Notices from '../pages/Notices'
 import Hostel from '../pages/Hostel'
 import Landing from '../pages/Landing'
+import Clubs from '../pages/Clubs'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <About/>
       <Departments/>
       <Notices/>
+      <Clubs/>
       <Hostel/>
       <Contact/> 
     </div>
