@@ -14,21 +14,31 @@ const Navbar = () => {
     const [department, setDepartment]= useState(false)
     const [administration, setAdministration]= useState(false)
     const [academics, setAcademics]= useState(false)
+    const [clubs, setClubs]=useState(false)
 
     const handleadmin=()=>{
         setAdministration(!administration)
         setDepartment(false)
         setAcademics(false)
+        setClubs(false)
     }
     const handledept=()=>{
         setAdministration(false)
         setDepartment(!department)
         setAcademics(false)
+        setClubs(false)
     }
     const handleacademics=()=>{
         setAdministration(false)
         setDepartment(false)
         setAcademics(!academics)
+        setClubs(false)
+    }
+    const handleclubs=()=>{
+        setAdministration(false)
+        setDepartment(false)
+        setAcademics(false)
+        setClubs(!clubs)
     }
     return (
         <section className='w-full  h-auto'>
@@ -144,7 +154,18 @@ const Navbar = () => {
                         <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="https://collegeadmission.eis.du.ac.bd/en">Admission</Link>
                     </div>
                 </div>
-                <Link onClick={()=>{setMenu(!menu)}}  className='w-auto flex items-center hover:border-l-2 px-4' to="/clubs">Clubs</Link>
+                <div className='w-auto relative group'>
+                    <p className='w-auto  flex items-center hover:border-l-2 px-4 gap-2 cursor-pointer ' onClick={handleclubs}>Clubs <IoIosArrowDown /></p>
+                    <div className={`w-auto rounded-md gap-2 right-[145px] top-0 ${clubs?"flex": "hidden"} p-2 flex-col items-start  `}>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="/clubs/asl">ASL</Link>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="/clubs/mecrc">MECRC</Link>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="/clubs/meccc">MECCC</Link>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="/clubs/mesl">MESL</Link>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="/clubs/mecds">MECDS</Link>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="/clubs/mesfps">MECFPS</Link>
+                        <Link onClick={()=>{setMenu(!menu)}}  className='w-auto pl-4 flex items-center hover:scale-105 transition duration-300' to="/clubs/mesfps">MECFPS</Link>
+                    </div>
+                </div>
                 <Link onClick={()=>{setMenu(!menu)}}  className='w-auto flex items-center hover:border-l-2 px-4' to="/">Alumni</Link>
                 <Link onClick={()=>{setMenu(!menu)}}  className='w-auto flex items-center hover:border-l-2 px-4' to="/notices">Notice</Link>
                 <Link onClick={()=>{setMenu(!menu)}}  className='w-auto flex items-center hover:border-l-2 px-4' to="/gallery">Gallery</Link>
