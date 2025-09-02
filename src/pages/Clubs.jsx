@@ -20,7 +20,7 @@ const Clubs = () => {
                 <img
                   src={image}
                   alt={name}
-                  className='w-full lg:w-1/3 h-64 object-cover'
+                  className='w-1/4 lg:w-1/3  object-cover'
                 />
               )}
 

@@ -17,8 +17,8 @@ const Club = () => {
       {club.image && (
         <img 
           src={club.image} 
-          alt={`${club.name} image`} 
-          className='w-2/3 rounded-lg' 
+          alt=''
+          className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 rounded-lg' 
         />
       )}
 

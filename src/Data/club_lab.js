@@ -3,6 +3,7 @@ export const club_lab = [
     id: 1,
     name: "Alpha Science Lab (ASL)",
     title: "asl",
+    image: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756800483/asl_ajsypm.png",
     category: "Lab",
     description: "Alpha Science Lab (ASL) is a premier student-driven scientific research lab at Mymensingh Engineering College (MEC). It serves as a hub for interdisciplinary innovation, hands-on learning, and advanced technology development. Students engage in projects spanning mechatronics, robotics, embedded systems, VLSI technology, aerospace, and IT-enabled solutions. ASL fosters collaboration, creativity, and analytical thinking, preparing students for national and international challenges in science and technology.",
     mission: [
@@ -26,6 +27,7 @@ export const club_lab = [
     id: 2,
     name: "Mechatronics & Embedded System Lab (MESL)",
     title: "mesl",
+    image: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756800484/mesl_rgdwmq.png",
     category: "Lab",
     description: "MESL is a specialized lab at MEC dedicated to advancing the knowledge and skills of students in mechatronics, embedded systems, robotics, and automation. It provides a practical learning environment where students design, prototype, and implement engineering solutions for real-world challenges. MESL emphasizes teamwork, technical skill development, and innovation in cutting-edge technologies.",
     mission: [
@@ -49,6 +51,7 @@ export const club_lab = [
     id: 3,
     name: "MEC Research Community",
     title: "mecrc",
+    image: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756800483/mecrc_puh30r.png",
     category: "Lab",
     description: "MEC Research Community is a vibrant student-led initiative aimed at promoting research, innovation, and academic excellence. The community bridges the gap between classroom learning and real-world application, enabling students to undertake meaningful projects across diverse engineering disciplines. MEC Research Community fosters curiosity, critical thinking, and collaborative problem-solving.",
     mission: [
@@ -72,6 +75,7 @@ export const club_lab = [
     id: 4,
     name: "MEC Computer Club",
     title: "meccc",
+    image: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756800483/meccc_vvxyqm.png",
     category: "Club",
     description: "The MEC Computer Club is a dynamic student-led organization promoting programming, software development, problem-solving, and innovation. It provides a platform for students to learn new technologies, engage in coding challenges, collaborate on projects, and participate in workshops and competitions.",
     mission: [
@@ -95,6 +99,7 @@ export const club_lab = [
     id: 5,
     name: "Mymensingh Engineering College Debating Society (MECDS)",
     title: "mecds",
+    image: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756800484/mecds_fyimuv.png",
     category: "Club",
     description: "MECDS is a premier student organization at MEC promoting critical thinking, public speaking, and intellectual engagement. It organizes debates, discussions, and forums, providing a platform for students to express ideas, engage with peers, and develop persuasive communication skills.",
     mission: [
@@ -118,6 +123,7 @@ export const club_lab = [
     id: 6,
     name: "Mymensingh Engineering College Film & Photographic Society (MECFPS)",
     title: "mecfps",
+    image: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756800484/mecfps_l9hxim.png",
     category: "Club",
     description: "MECFPS is a student-led society fostering creativity, visual storytelling, and technical skills in photography and filmmaking. It provides workshops, training sessions, screenings, exhibitions, and collaborative projects, allowing students to develop artistic talent and professional-level skills.",
     mission: [
