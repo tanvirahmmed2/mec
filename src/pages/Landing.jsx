@@ -21,11 +21,11 @@ const Landing = () => {
   }, []);
 
   return (
-    <section className="w-full h-auto">
+    <section className="w-full h-auto md:h-[90vh] overflow-hidden rounded-xl">
       <img
         src={images[currentIndex]}
         alt={`slide-${currentIndex}`}
-        className="w-full h-auto lg:h-full transition-opacity duration-1000"
+        className="w-full h-auto md:h-full object-cover transition-opacity duration-1000"
       />
     </section>
   );
