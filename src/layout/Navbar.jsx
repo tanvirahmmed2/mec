@@ -65,7 +65,7 @@ const Navbar = () => {
                     <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' to="/about">About</Link>
                     <div className='w-auto relative group'>
                         <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' to="/department">Department <IoIosArrowDown /></Link>
-                        <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
+                        <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-red-50 '>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/ce">Department of Civil Engineering</Link>
                             <Link className='w-auto px-2 block h-12 items-center hover:scale-105 transition duration-300' to="/eee">Department of Electrical & Electronic Engineering</Link>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/cse">Department of Computer Science & Engineering</Link>
@@ -75,7 +75,7 @@ const Navbar = () => {
 
                     <div className='w-auto hidden lg:block relative group'>
                         <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' to="/administration">Administration <IoIosArrowDown /></Link>
-                        <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
+                        <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-red-50 '>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/faculty">Faculty</Link>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/officers">Officers</Link>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/staff">Staff</Link>
@@ -83,7 +83,7 @@ const Navbar = () => {
                     </div>
                     <div className='w-auto hidden md:block relative group'>
                         <Link className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' to="clubs">Clubs <IoIosArrowDown /></Link>
-                        <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
+                        <div className='w-80 rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-red-50 '>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/clubs/mecrc">MEC Research Club</Link>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/clubs/asl">Alpha Science Lab</Link>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="/clubs/mesl">MESL</Link>
@@ -94,7 +94,7 @@ const Navbar = () => {
                     </div>
                     <div className='w-auto relative group'>
                         <p className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' >Academics <IoIosArrowDown /></p>
-                        <div className='w-auto rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
+                        <div className='w-auto rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-red-50 '>
                             <Link className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' to="curriculam">Curriculam</Link>
                             <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="https://cmc.du.ac.bd/result.php">Result</a>
                             <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="https://collegeadmission.eis.du.ac.bd/en">Admission</a>
@@ -102,7 +102,7 @@ const Navbar = () => {
                     </div>
                     <div className='w-auto hidden lg:block relative group'>
                         <p className='w-auto h-12 flex items-center hover:border-b-2 px-4 gap-2 text-white' >Download <IoIosArrowDown /></p>
-                        <div className='w-auto rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-white '>
+                        <div className='w-auto rounded-md absolute hidden group-hover:flex p-2 flex-col items-start  bg-red-50 '>
                             <a className='w-auto px-2 flex h-12 items-center hover:scale-105 transition duration-300' href="https://cmc.du.ac.bd/result.php">Result</a>
                         </div>
                     </div>
