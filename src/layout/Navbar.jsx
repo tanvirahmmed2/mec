@@ -46,7 +46,7 @@ const Navbar = () => {
                 <div className='w-full h-20 flex flex-row items-center justify-around bg-red-50'>
                     <div className='w-auto h-20 flex flex-row items-center justify-center gap-3 px-2'>
                         <a href="/"><img src={logo} alt="" className='h-14 w-14 md:h-16 md:w-16' /></a>
-                        <h1 className='w-auto h-16 text-lg md:text-xl lg:text-2xl font-semibold flex items-center'>Mymensingh Engineering College</h1>
+                        <Link className='w-auto h-16 text-lg md:text-xl lg:text-2xl font-semibold flex items-center' to='/'>Mymensingh Engineering College</Link>
 
 
                     </div>
@@ -56,6 +56,7 @@ const Navbar = () => {
                         <Link className='w-auto h-12 hidden sm:flex  items-center hover:border-b-2 px-4 ' to="/">Home</Link>
                         <Link className='w-auto h-12 hidden md:flex  items-center hover:border-b-2 px-4 ' to="/">Login</Link>
                         <Link className='w-auto h-12 hidden lg:flex  items-center hover:border-b-2 px-4 ' to="/">Alumni</Link>
+                        <Link className='w-auto h-12 hidden lg:flex  items-center hover:border-b-2 px-4 ' to="/">News</Link>
                         <p className='w-auto h-12 flex lg:hidden items-center hover:border-b-2 px-4 cursor-pointer ' onClick={handlemenu}><GiHamburgerMenu /></p>
                     </div>
 
