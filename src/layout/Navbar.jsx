@@ -173,6 +173,7 @@ const Navbar = () => {
                 <Link onClick={()=>{setMenu(!menu)}}  className='w-auto flex items-center hover:border-l-2 px-4' to="/gallery">Gallery</Link>
                 <Link onClick={()=>{setMenu(!menu)}}  className='w-auto flex items-center hover:border-l-2 px-4' to="/hostel">Hostel</Link>
                 <Link onClick={()=>{setMenu(!menu)}}  className='w-auto flex items-center hover:border-l-2 px-4' to="/library">Library</Link>
+                <Link onClick={()=>{setMenu(!menu)}}  className='w-auto flex items-center hover:border-l-2 px-4' to="/">News</Link>
                 <Link onClick={()=>{setMenu(!menu)}} className='w-auto flex items-center hover:border-l-2  px-4' to="/">Login</Link>
 
             </div>
