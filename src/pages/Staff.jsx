@@ -6,7 +6,7 @@ const Staff = () => {
     const {staff} =useContext(CreateContext)
   return (
     <section className='w-full h-auto flex flex-col items-center justify-center gap-6 py-6'>
-      <h1 className="text-3xl font-semibold text-center">Stuff</h1>
+      <h1 className="text-3xl font-semibold text-center">Staff</h1>
       <div className='w-full flex flex-wrap gap-8 justify-center'>
       {
         staff.map((staff)=>{
