@@ -23,7 +23,7 @@ import Club from "./pages/Club";
 
 const App = () => {
   return (
-    <div className="w-full overflow-x-hidden h-auto">
+    <div className="w-full overflow-x-hidden h-auto text-justify">
       <Navbar />
       <div className="w-full min-h-screen p-2 py-6 flex items-center justify-center">
         <Routes>
