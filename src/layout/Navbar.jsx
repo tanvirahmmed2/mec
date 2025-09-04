@@ -41,9 +41,9 @@ const Navbar = () => {
         setClubs(!clubs)
     }
     return (
-        <section className='w-full  h-auto'>
-            <nav className='w-full h-20 sm:h-32  flex flex-col items-center justify-between border-b-2 z-40'>
-                <div className='w-full h-20 flex flex-row items-center justify-around bg-red-50'>
+        <section className='w-full  h-auto fixed'>
+            <nav className='w-full h-20 sm:h-32  flex flex-col items-center justify-between border-b-2 z-40 '>
+                <div className='w-full h-20 flex flex-row items-center justify-around bg-red-50 sm:bg-transparent backdrop-blur-lg'>
                     <div className='w-auto h-20 flex flex-row items-center justify-center gap-3 px-2'>
                         <a href="/"><img src={logo} alt="" className='h-14 w-14 md:h-16 md:w-16' /></a>
                         <Link className='w-auto h-16 text-lg md:text-xl lg:text-2xl font-semibold flex items-center' to='/'>Mymensingh Engineering College</Link>

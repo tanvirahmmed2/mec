@@ -25,7 +25,7 @@ const App = () => {
   return (
     <div className="w-full overflow-x-hidden h-auto text-justify">
       <Navbar />
-      <div className="w-full min-h-screen p-2 py-6 flex items-center justify-center">
+      <div className="w-full min-h-screen mt-20 sm:mt-32 p-2 py-6 flex items-center justify-center">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
